@@ -1,0 +1,190 @@
+/* !BiletX Fonts Root */
+@font-face {
+    font-family:'TmSans' ;
+    src: url(/BiletX/style/TmSans.woff) format('truetype');
+}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+:root {
+    --fontTmSans: 'TmSans', Arial ;
+    --fontInterstate: 'Overpass', sans-serif;
+
+}
+
+/* !BİLETİX RENK ROOT */
+:root {
+    /* standard white, for container background, some fonts and icons */
+    --white: #ffffff;
+  
+    /*  some card background hovers */
+    --grayish-white: #f7f7f7;
+  
+    /*  navbar background */
+    --navbar-background-image: linear-gradient(
+      90deg,
+      rgb(1, 80, 167),
+      rgb(2, 108, 223),
+      rgb(1, 80, 167)
+    );
+  
+    /* headers font color */
+    --headers-font-black: #414141;
+  
+    /* dropdown font color */
+    --dropdown-font-black: #000;
+  
+    /* black for navbar and footer */
+    --light-black: #1f262d;
+  
+    /* some subheaders and backgrounds */
+    --gray: #717171;
+  
+    /*  some backgrounds and borders  */
+    --light-gray: #e6e6e6;
+  
+    /* navbar icons etc */
+    --blue: #2e4791;
+    --navbar-hover-background: #0456b3;
+    --navbar-categorylink-hover-blue: #1085b7;
+  
+    /*  some hovers, buttons, and p's */
+    --turquoise: #009ddd;
+  
+    /* for darker blue hovers */
+    --dark-blue: #23527c;
+  
+    /* light blue for outlines */
+    --outline-lightblue: #acc3db;
+  
+    /* red's */
+    --light-red: #d93a3a;
+    --red: #ff0000;
+    --pink: #d0006f;
+}
+
+/* !SIFIRLAMA İŞLEMİ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+}
+
+/* !NAVBAR */
+/** navbar */
+.navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--navbar-background-image) !important;
+}
+.navbar-nav{
+    flex-direction: row !important;
+}
+/**navbar-search*/
+.navbar-search{
+    width: 300px !important;
+    height: 40px !important;
+    border: 1px solid white !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    background-color: #0155b0;
+}
+.navbar-search::placeholder {
+    color: white !important;
+    padding-left: 5px !important;
+}
+/**navbar-search-focus*/
+.navbar-search:focus {
+    background-color: white !important;
+    transition: 0.3s;
+}
+.navbar-search:focus + .navbar-search-buton {
+    background-image: url(../img/mag3.png) !important;
+    background-color: #ffffff !important;
+}
+.navbar-search:focus + .navbar-search-buton:hover {
+    background-image: url(../img/mag3w.png) !important;
+    background-color: #009cde !important;
+}
+/** navbar-search-buton */
+.navbar-search-buton {
+    background-image: url(../img/mag3w.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 64% !important;
+    background-color: #0155b0 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    height: 96% !important;
+    width: 27px !important;
+    top: 50% !important;
+    right: -12px !important;
+    transform: translate(-50%, -50%) !important;
+}
+.navbar-search-buton:hover {
+    background-color: #009cde !important;
+    cursor: pointer;
+}
+
+/** navbar-eye */
+.navbar-eye{
+    display: none !important;
+}
+
+#navbar-xmark{
+    display: none;
+}
+.navbar-xmark{
+    display: block !important;
+}
+
+/** navbar-kategori  */
+
+
+/** navbar-responsive */
+@media screen and (max-width:1000px) {
+    .navbar-responsive{
+        justify-content: space-evenly !important;
+    }
+    /* navbar içindeki link grubu */
+    .navbar-content ul:first-child{
+        display: none;
+    }
+    .navbar-content ul{
+        margin: 0 !important;
+    }
+    /* bar-menu görünür oluyor*/
+    .bar-menu{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    /* elemanlar arasında boşluk bırakmak için between kullandım */
+    .navbar-responsive{
+        justify-content: space-between !important;
+    }
+    /* responsive olmadan önceki search */
+    .navbar-search-item-1{
+        display: none !important;
+    }
+    /* responsive olduktan sonraki search */
+    .navbar-search-item-2{
+        display: block !important;
+    }
+
+    /* giriş yap yazısını kayboluyor */
+    .navbar-responsive span{
+        display: none !important;
+    }
+    /* search'ün genişliği tüm divi kaplıyor */
+    .navbar-search{
+        width: 100% !important;
+    }
+    /* kategoriyi gizlemek için kullandım */
+    .navbar-kategori{
+        display: none;
+    }
+    
+}
