@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <!-- !bootstrap-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <header class="container-fluid p-0 m-0">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg flex-wrap ">
+            <div class= "navbar-responsive d-flex justify-content-center align-items-center w-100 ">
+                <!-- logo ve bar-menu -->
+                <div class="ms-2 d-flex align-items-center navbar-logo">
+                    <i class="fa-solid fa-bars fs-2 me-3 d-none bar-menu" style="color: #ffffff"></i>
+                    <a class="navbar-brand" href="#"><img src="img/btx-logo.svg" alt=""></a>
+                </div>
+              <div class=" me-2 d-flex align-items-center  navbar-content" >
+                <!-- link-grubu -->
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Müzik</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Sahne</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Spor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Aile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Eğitim&Fazlası</a>
+                  </li>
+                </ul>
+                <!-- search ve giriş yap -->
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item me-4 navbar-search-item-1">
+                        <form class="d-flex position-relative" role="search">
+                            <input class="navbar-search" type="search" placeholder="Etkinlik, sanatçı ya da mekan arayın" aria-label="Search">
+                            <button class="position-absolute btn btn-outline-success navbar-search-buton" type="submit"></button>
+                        </form>
+                    </li>
+                    <li  class="nav-item eye me-3 d-md-none">
+                        <i id="navbar-eye" class="fa-solid fa-eye fs-3" style="color: #ffffff;"></i>
+                        <i id="navbar-xmark" class="fa-solid fa-xmark fs-3" style="color: #ffffff;"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand fs-6 text-white m-0" href="#">
+                            <i class="fa-regular fa-circle-user fs-2 text-white"></i>
+                            <span>Giriş Yap</span>
+                        </a>
+                    </li>
+    
+                </ul>
+              </div>
+            </div>
+            <!-- search-2 -->
+            <div class="w-100 mt-2 mx-2">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center w-100">
+                    <li class="nav-item navbar-search-item-2 d-none w-100">
+                        <form class=" position-relative w-100" role="search">
+                            <input class="navbar-search w-100" type="search" placeholder="Etkinlik, sanatçı ya da mekan arayın" aria-label="Search">
+                            <button class="position-absolute btn btn-outline-success navbar-search-buton" type="submit"></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar-kategori -->
+        <div id="navbar-kategori" class="navbar-kategori p-2 shadow">
+            <div class="container w-75">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 p-0">
+                        <ul class="navbar-nav align-items-center ms-5">
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-eye ms-2 ps-1  icons"></i>
+                                </div>
+                                <span>
+                                    Keşfet
+                                </span>
+                            </li>
+                            <li class="navbar-item ms-3">
+                                <select >
+                                    <option selected="selected" value="-1">Tüm Kategoriler</option>
+                                    <option  value="MUSIC">MÜZİK</option>
+                                    <option value="SPORT">SPOR</option>
+                                    <option value="ART">SAHNE</option>
+                                    <option value="FAMILY">AİLE</option>
+                                    <option value="OTHER">Eğitim & Fazlası</option>
+                                </select>
+                            </li>
+                    
+                    
+                        </ul>
+                    </div>
+                    <div class="col-md-3 p-0">
+                        <ul class="navbar-nav align-items-center ms-5">
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-calendar ms-2 ps-1  icons"></i>
+                                </div>
+                                <span>
+                                    Keşfet
+                                </span>
+                            </li>
+                            <li class="navbar-item ms-3">
+                                <select >
+                                    <option selected="selected" value="-1">Tüm Kategoriler</option>
+                                    <option  value="MUSIC">MÜZİK</option>
+                                    <option value="SPORT">SPOR</option>
+                                    <option value="ART">SAHNE</option>
+                                    <option value="FAMILY">AİLE</option>
+                                    <option value="OTHER">Eğitim & Fazlası</option>
+                                </select>
+                            </li>
+                    
+                    
+                        </ul>
+                    </div>
+                    <div class="col-md-3 p-0">
+                        <ul class="navbar-nav align-items-center ms-5">
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-location-dot ms-2 ps-1  icons"></i>
+                                </div>
+                                <span>
+                                    Keşfet
+                                </span>
+                            </li>
+                            <li class="navbar-item ms-3">
+                                <select >
+                                    <option selected="selected" value="-1">Tüm Kategoriler</option>
+                                    <option  value="MUSIC">MÜZİK</option>
+                                    <option value="SPORT">SPOR</option>
+                                    <option value="ART">SAHNE</option>
+                                    <option value="FAMILY">AİLE</option>
+                                    <option value="OTHER">Eğitim & Fazlası</option>
+                                </select>
+                            </li>
+                    
+                    
+                        </ul>
+                    </div>
+                    <div class="col-md-3 p-0 text-end">
+                        <button class="btn btn-primary rounded-0">Git</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- !fontawesome-script -->
+    <script
+      src="https://kit.fontawesome.com/5dfa75166b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- !bootstrap-script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- !script-js -->
+    <script src="script/script.js"></script>
+</body>
+</html>
+
+
+  
