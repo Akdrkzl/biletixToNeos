@@ -100,16 +100,16 @@
     transition: 0.3s;
 }
 .navbar-search:focus + .navbar-search-buton {
-    background-image: url(../img/mag3.png) !important;
+    background-image: url(./img/mag3.png) !important;
     background-color: #ffffff !important;
 }
 .navbar-search:focus + .navbar-search-buton:hover {
-    background-image: url(../img/mag3w.png) !important;
+    background-image: url(./img/mag3w.png) !important;
     background-color: #009cde !important;
 }
 /** navbar-search-buton */
 .navbar-search-buton {
-    background-image: url(../img/mag3w.png);
+    background-image: url(./img/mag3w.png);
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 64% !important;
