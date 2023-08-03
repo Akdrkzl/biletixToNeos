@@ -188,3 +188,97 @@
     }
     
 }
+
+       /* !footerMain start */
+        
+        .footer-main {
+            background-color: #1f262d;
+            position: relative;
+            bottom: 0;
+            color: #ffffff;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .footer-main-acordion-header,
+        .footerMain-header {
+            font-size: 16px;
+        }
+        
+        .footer-main-acordion-content a {
+            color: white;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        
+        .footer-main-acordion-content a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-main-p {
+            color: white;
+            font-size: 13px;
+        }
+        
+        .footer-main-toggle-btn {
+            display: flex;
+            text-align: end;
+            display: none;
+            float: right;
+            cursor: pointer;
+        }
+        
+        .footer-main-toggle-btn::before {
+            content: "+";
+            /* acordion yapısında + içeriğini ekledim contwnt kullanarak */
+            float: inline-end;
+        }
+        
+        .active .footer-main-toggle-btn::before {
+            content: "-";
+        }
+        
+        @media screen and (max-width: 576px) {
+            .footer-main .container {
+                width: 100% !important;
+            }
+            .footer-main-acordion-item {
+                margin-bottom: 10px;
+                display: block;
+            }
+            .footer-main-line-1 {
+                display: none;
+            }
+            .footer-main-acordion-header {
+                cursor: pointer;
+                display: block;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .footer-main-acordion-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                /* geçiş efekti için transition verdim */
+            }
+            .footer-main-acordion-item.active .footer-main-acordion-content {
+                max-height: 200px;
+            }
+            .footer-main-toggle-btn {
+                display: flex;
+                float: right;
+                /* + ve - butonunu sağa doğru yasladım. */
+            }
+        }
+        
+        @media screen and (max-width: 410px) {
+            .footer-main {
+                width: 100% !important;
+            }
+            .footer-main-icon ul li a img {
+                width: 50% !important;
+            }
+        }
+        /* !footerMain end */
