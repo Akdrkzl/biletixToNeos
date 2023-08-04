@@ -189,6 +189,188 @@
     
 }
 
+
+/* CAROUSEL START*/
+
+/* carousel  */
+
+#carouselExampleCaptions {
+  border: 1px solid var(--light-gray);
+  position: relative;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 90%;
+  justify-content: start !important;
+  margin-left: 0 !important;
+  z-index: 2;
+  display: flex;
+}
+
+.carousel-indicators button {
+  width: 8px !important;
+  height: 8px !important;
+  display: inline-block !important;
+  border-radius: 100% !important;
+  background-color: var(--dropdown-font-black) !important;
+  margin: 0 5px 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: var(--sliderblue) !important;
+}
+
+.c-control-icons {
+  position: absolute !important;
+  top: 40% !important;
+  width: 27px !important;
+  height: 44px !important;
+  margin-top: -22px !important;
+  z-index: 10 !important;
+  cursor: pointer !important;
+  -moz-background-size: 27px 44px !important;
+  -webkit-background-size: 27px 44px !important;
+  background-size: 27px 44px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(img/slider/previous.svg) !important;
+  position: absolute;
+  left: 10px;
+  right: auto;
+}
+
+.carousel-control-next-icon {
+  background-image: url(img/slider/next.svg) !important;
+  position: absolute;
+  right: 10px;
+  left: auto;
+}
+
+.bilet-button {
+  position: absolute;
+  background: var(--turquoise);
+  bottom: 30px;
+  right: 10px;
+  background-color: var(--turquoise);
+  color: var(var(--white));
+  font-size: 16px !important;
+  width: 106px;
+  height: 40px;
+  padding: 9px 0px 9px 0px;
+}
+
+@media (max-width: 769px) {
+  .caption h3 {
+    font-size: 18px !important;
+  }
+
+  .caption p {
+    font-size: 12px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .caption h3 {
+    font-weight: bold !important;
+    margin-bottom: 10px;
+  }
+}
+
+/* CAROUSEL END */
+
+/* ONE CIKANLAR */
+
+.header-wrapper {
+  width: 100% !important;
+  font-size: 20px !important;
+  height: 26px !important;
+  position: relative !important;
+  z-index: 2 !important;
+  font-size: 18px !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 600px) {
+  .header-wrapper {
+    margin-bottom: 10px !important;
+    font-weight: bold !important;
+    padding-top: 4px !important;
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+
+  .header-wrapper::before {
+    content: "" !important;
+    position: absolute !important;
+    display: block !important;
+    bottom: -11px !important;
+    width: 40px !important;
+    border-bottom: 4px solid rgb(197, 107, 255) !important;
+    left: 50% !important;
+    margin-left: -20px !important;
+  }
+}
+.card-etkinlik h6,
+p {
+  color: var(--headers-font-black);
+}
+
+.card:hover {
+  background-color: var(--grayish-white);
+}
+/* CARD BODY HEADERS */
+
+.card-etkinlik h6 {
+  display: block !important;
+  line-height: 16px !important;
+  padding: 0px !important;
+  margin: 0 0 4px !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  letter-spacing: 0.24px !important;
+  font-size: 14px !important;
+
+  overflow: hidden !important;
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .card-etkinlik h6 {
+    font-size: 1.7vw !important;
+    line-height: 1.1em !important;
+    max-height: 2.1em !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+}
+
+/* CARD BODY P'S */
+.card-etkinlik p {
+  display: block !important;
+  line-height: 14px !important;
+  padding: 0px !important;
+  margin: 0px 2px 2px 0px !important;
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .card-etkinlik p {
+    font-size: 1.6vw !important;
+    line-height: 1.1em !important;
+    max-height: 3.3em !important;
+    overflow: hidden !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+}
+
+/* CAROUSEL END */
+
+
        /* !footerMain start */
         
         .footer-main {
