@@ -189,7 +189,6 @@
     
 }
 
-
 /* CAROUSEL START*/
 
 /* carousel  */
@@ -272,9 +271,27 @@
     font-size: 12px !important;
     padding-bottom: 10px !important;
   }
+
+  .c-control-icons {
+    /* display: initial; */
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 22px !important;
+    height: 100% !important;
+    width: 36px !important;
+    background-size: 18px !important;
+    background-size: 18px !important;
+    background-position: 9px 40% !important;
+    opacity: 1 !important;
+  }
+  .carousel-control-next-icon {
+    right: 0px;
+  }
+  .carousel-control-prev-icon {
+    left: 0px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   .caption h3 {
     font-weight: bold !important;
     margin-bottom: 10px;
@@ -295,9 +312,13 @@
   letter-spacing: 0.5px !important;
   text-transform: uppercase !important;
 }
+.header-wrapper span {
+  color: var(--headers-font-black);
+}
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   .header-wrapper {
+    margin-top: 20px !important;
     margin-bottom: 10px !important;
     font-weight: bold !important;
     padding-top: 4px !important;
@@ -316,6 +337,43 @@
     margin-left: -20px !important;
   }
 }
+
+/* ONE CIKANLAR CARDS ON SM START */
+.onecikanlar-sm .onecikanlar-container {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  overflow-x: auto !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  list-style: none !important;
+  width: 100% !important;
+}
+
+.onecikanlar-container li {
+  width: 100% !important;
+  height: 100% !important;
+
+  flex-shrink: 0 !important;
+  width: 67.9231% !important;
+  padding-bottom: 8px !important;
+  margin: 15px 4px !important;
+}
+
+.onecikanlar-container li .card {
+  border-bottom: 3px solid #e6e6e6 !important;
+}
+
+.onecikanlar-container li .card .card-body {
+  width: 100% !important;
+  float: left !important;
+  margin: 0px !important;
+  padding: 15px !important;
+}
+
+/* ONE CIKANLAR CARDS ON SM END */
+
+/* CARDS */
 .card-etkinlik h6,
 p {
   color: var(--headers-font-black);
@@ -335,7 +393,6 @@ p {
   font-weight: bold !important;
   letter-spacing: 0.24px !important;
   font-size: 14px !important;
-
   overflow: hidden !important;
 }
 
