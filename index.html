@@ -10,9 +10,46 @@
 
 </head>
 <body>
+        <!-- !NAVBAR-START -->
     <header class="container-fluid p-0 m-0">
+        <!-- üst-div -->
+        <div class="container-fluid bg-dark " style="height: 35px;">
+            <div class="ust-nav m-auto d-flex justify-content-between h-100 ">
+                <ul class="d-flex  align-items-center m-0 p-0 h-100 ">
+                    <div class="me-3">
+                        <a class="text-light" href="#">
+                            <i class="fa-solid fa-message" style="color: #ffffff"></i>
+                            TR
+                        </a>
+                    </div>
+                    <div class="">
+                        <a class="text-light" href="#">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            Tüm Türkiye
+                        </a>
+                    </div>                 
+                </ul>
+                <ul class="ust-nav-items d-flex  align-items-center m-0 p-0 h-100 ">
+                    <div class="me-3">
+                        <a class="text-light" href="#">
+                            <i class="fa-solid fa-gift"></i>
+                            Hediye Kartı
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a class="text-light" href="#">Aylık Dergi</a>
+                    </div>
+                    <div class="me-3">
+                        <a class="text-light" href="#">Blog</a>
+                    </div>
+                    <div class="me-3">
+                        <a class="text-light" href="#">Yardım</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg flex-wrap ">
+        <nav class="navbar navbar-expand-lg flex-wrap p-1 ">
             <div class= "navbar-responsive d-flex justify-content-center align-items-center w-100 ">
                 <!-- logo ve bar-menu -->
                 <div class="ms-2 d-flex align-items-center navbar-logo">
@@ -21,24 +58,24 @@
                 </div>
               <div class=" me-2 d-flex align-items-center  navbar-content" >
                 <!-- link-grubu -->
-                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                <ul class="link-grubu navbar-nav me-5 mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Müzik</a>
+                    <a class="nav-link active text-white link-grup" href="#" data-target="#link-detay-bir" >Müzik</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">Sahne</a>
+                    <a class="nav-link active text-white link-grup" href="#" data-target="#link-detay-iki">Sahne</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">Spor</a>
+                    <a class="nav-link active text-white link-grup" href="#" data-target="#link-detay-uc">Spor</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">Aile</a>
+                    <a class="nav-link active text-white link-grup" href="#" data-target="#link-detay-dort">Aile</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">Eğitim&Fazlası</a>
+                    <a class="nav-link active text-white link-grup" href="#" data-target="#link-detay-bes">Eğitim&Fazlası</a>
                   </li>
                 </ul>
-                <!-- search ve giriş yap -->
+                <!-- search-giriş yap ve eyes -->
                 <ul class="navbar-nav d-flex align-items-center">
                     <li class="nav-item me-4 navbar-search-item-1">
                         <form class="d-flex position-relative" role="search">
@@ -73,21 +110,21 @@
             </div>
         </nav>
         <!-- navbar-kategori -->
-        <div id="navbar-kategori" class="navbar-kategori p-2 shadow">
-            <div class="container w-75">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-md-3 p-0">
-                        <ul class="navbar-nav align-items-center ms-5">
-                            <li>
+        <div id="navbar-kategori" class="navbar-kategori shadow position-absolute z-n1 w-100">
+            <div class="container-fluid">
+                <div class="navbar-kategori-responsive d-flex justify-content-center align-items-center w-100 ">
+                    <div class="navbar-kategori-select p-0">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="d-flex flex-column align-items-center me-2">
                                 <div>
-                                    <i class="fa-solid fa-eye ms-2 ps-1  icons"></i>
+                                    <i class="fa-solid fa-eye fs-5 icons" style="color: #2d4791;"></i>
                                 </div>
                                 <span>
-                                    Keşfet
+                                    KEŞFET
                                 </span>
                             </li>
-                            <li class="navbar-item ms-3">
-                                <select >
+                            <li class="navbar-item ms-3 w-100">
+                                <select class="">
                                     <option selected="selected" value="-1">Tüm Kategoriler</option>
                                     <option  value="MUSIC">MÜZİK</option>
                                     <option value="SPORT">SPOR</option>
@@ -96,65 +133,197 @@
                                     <option value="OTHER">Eğitim & Fazlası</option>
                                 </select>
                             </li>
-                    
-                    
                         </ul>
                     </div>
-                    <div class="col-md-3 p-0">
-                        <ul class="navbar-nav align-items-center ms-5">
-                            <li>
+                    <div class="navbar-kategori-select ms-3 p-0">
+                        <ul class="navbar-nav align-items-center w-100 ">
+                            <li class="d-flex flex-column align-items-center">
                                 <div>
-                                    <i class="fa-solid fa-calendar ms-2 ps-1  icons"></i>
+                                    <i class="fa-solid fa-calendar fs-5 navbar-kategori-icon" style="color: #2d4791;"></i>
                                 </div>
-                                <span>
-                                    Keşfet
+                                <span class="">
+                                    TARİH
                                 </span>
                             </li>
-                            <li class="navbar-item ms-3">
-                                <select >
-                                    <option selected="selected" value="-1">Tüm Kategoriler</option>
-                                    <option  value="MUSIC">MÜZİK</option>
-                                    <option value="SPORT">SPOR</option>
-                                    <option value="ART">SAHNE</option>
-                                    <option value="FAMILY">AİLE</option>
-                                    <option value="OTHER">Eğitim & Fazlası</option>
+                            <li class="navbar-item ms-3 w-100">
+                                <select  class="">
+                                    <option selected="selected" value="-1">Tüm Tarihler</option>
+                                    <option value="today">Bugün</option>
+                                    <option value="weekend">Hafta Sonu</option>
+                                    <option value="nextweekend">Önümüzdeki Hafta Sonu</option>
+                                    <option value="thisweek">Bu Hafta</option>
+                                    <option value="next14days">Önümüzdeki 14 Gün</option>
+                                    <option value="next30days">Önümüzdeki 30 Gün</option>
+                                    <option id="seldatarange" value="daterange">Tarih Aralığı</option>
                                 </select>
                             </li>
                     
                     
                         </ul>
                     </div>
-                    <div class="col-md-3 p-0">
-                        <ul class="navbar-nav align-items-center ms-5">
-                            <li>
-                                <div>
-                                    <i class="fa-solid fa-location-dot ms-2 ps-1  icons"></i>
+                    <div class="navbar-kategori-select ms-3 p-0">
+                        <ul class="navbar-nav align-items-center justify-content-start w-100 ">
+                            <li class="d-flex flex-column align-items-center me-3"   >
+                                <div class="text-start">
+                                    <i class="fa-solid fa-location-dot fs-5 navbar-kategori-icon" style="color: #2d4791;"></i>
                                 </div>
                                 <span>
-                                    Keşfet
+                                    YER
                                 </span>
                             </li>
-                            <li class="navbar-item ms-3">
-                                <select >
-                                    <option selected="selected" value="-1">Tüm Kategoriler</option>
-                                    <option  value="MUSIC">MÜZİK</option>
-                                    <option value="SPORT">SPOR</option>
-                                    <option value="ART">SAHNE</option>
-                                    <option value="FAMILY">AİLE</option>
-                                    <option value="OTHER">Eğitim & Fazlası</option>
-                                </select>
+                            <li class="navbar-item ms-3 w-100">
+                                <select class="">
+                                    <option selected="selected" value="-1">Tüm Türkiye</option>
+                                        <option value="İstanbul">İstanbul</option>
+                                        <option value="Ankara">Ankara</option>
+                                        <option value="İzmir">İzmir</option>
+                                        <option value="Adana">Adana</option>
+                                        <option value="Afyonkarahisar">Afyonkarahisar</option>
+                                        <option value="Antalya">Antalya</option>
+                                        <option value="Aydın">Aydın</option>
+                                        <option value="Balıkesir">Balıkesir</option>
+                                        <option value="Batman">Batman</option>
+                                        <option value="Bingöl">Bingöl</option>
+                                        <option value="Bolu">Bolu</option>
+                                        <option value="Bursa">Bursa</option>
+                                        <option value="Çanakkale">Çanakkale</option>
+                                        <option value="Denizli">Denizli</option>
+                                        <option value="Diyarbakır">Diyarbakır</option>
+                                        <option value="Düzce">Düzce</option>
+                                        <option value="Edirne">Edirne</option>
+                                        <option value="Elazığ">Elazığ</option>
+                                        <option value="Erzurum">Erzurum</option>
+                                        <option value="Eskişehir">Eskişehir</option>
+                                        <option value="Gaziantep">Gaziantep</option>
+                                        <option value="Giresun">Giresun</option>
+                                        <option value="Hatay">Hatay</option>
+                                        <option value="Isparta">Isparta</option>
+                                        <option value="Kahramanmaraş">Kahramanmaraş</option>
+                                        <option value="Kayseri">Kayseri</option>
+                                        <option value="Kırıkkkale">Kırıkkkale</option>
+                                        <option value="Kırklareli">Kırklareli</option>
+                                        <option value="Kocaeli">Kocaeli</option>
+                                        <option value="Konya">Konya</option>
+                                        <option value="Kütahya">Kütahya</option>
+                                        <option value="Malatya">Malatya</option>
+                                        <option value="Manisa">Manisa</option>
+                                        <option value="Mardin">Mardin</option>
+                                        <option value="Mersin">Mersin</option>
+                                        <option value="Muğla">Muğla</option>
+                                        <option value="Nevşehir">Nevşehir</option>
+                                        <option value="Niğde">Niğde</option>
+                                        <option value="Ordu">Ordu</option>
+                                        <option value="Sakarya">Sakarya</option>
+                                        <option value="Samsun">Samsun</option>
+                                        <option value="Şanlıurfa">Şanlıurfa</option>
+                                        <option value="Sinop">Sinop</option>
+                                        <option value="Sivas">Sivas</option>
+                                        <option value="Tekirdağ">Tekirdağ</option>
+                                        <option value="Tokat">Tokat</option>
+                                        <option value="Trabzon">Trabzon</option>
+                                        <option value="Uşak">Uşak</option>
+                                        <option value="Yalova">Yalova</option>
+                                        <option value="Yozgat">Yozgat</option>
+                                        <option value="Zonguldak">Zonguldak</option>
+                                </select>                        
                             </li>
-                    
-                    
                         </ul>
                     </div>
-                    <div class="col-md-3 p-0 text-end">
+                    <div class="navbar-kategori-select ms-2 p-0 text-end">
                         <button class="btn btn-primary rounded-0">Git</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- linkler-detay-->
+        <div id="link-detay-bir" class="link-detay container-fluid p-0 m-0 bg-light shadow">
+            <div class="container p-3">
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="muzik.html">Tüm Müzik Etkinlikleri</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Rock</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Klasik</a>
+                </div>
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Pop</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Caz</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Alternatif</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="link-detay-iki" class="link-detay container-fluid p-0 m-0 bg-light shadow">
+            <div class="container p-3">
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="#">Tüm Sahne Etkinlikleri</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Gösteri</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Stand-Up</a>
+                </div>
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Tiyatro</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Bale-Dans</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="link-detay-uc" class="link-detay container-fluid p-0 m-0 bg-light shadow">
+            <div class="container p-3">
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="#">Tüm Spor Etkinlikleri</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Basketbol</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Voleybol</a>
+                </div>
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Futbol</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Motor Sporları</a>
+                </div>
+            </div>
+        </div>
+        <div id="link-detay-dort" class="link-detay container-fluid p-0 m-0 bg-light shadow">
+            <div class="container p-3">
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="#">Tüm Aile Etkinlikleri</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Tiyatro</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Theme-Park</a>
+                </div>
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Gösteri</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Müzikli Gösteri</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Attraction Center</a>
+                </div>
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Sirk</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Zoo</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Aile ve Çocuk</a>
+                </div>
+            </div>
+        </div>
+        <div id="link-detay-bes" class="link-detay container-fluid p-0 m-0 bg-light shadow">
+            <div class="container p-3">
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="#">Eğitim & Fazlası</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Tiyatrolar</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Açık Hava</a>
+                </div>
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Müze</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Aile ve Çocuk</a>
+                </div>
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Seyretix</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Komedi</a>
+                </div>
+                <div class="row p-2">
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Kulüp</a>
+                    <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Rap-Hiphop</a>
+                </div>
+            </div>
+        </div>
+    
+    
     </header>
+    <!-- !NAVBAR-END -->
 
    <!-- CAROUSEL START -->
   <!-- container -->
