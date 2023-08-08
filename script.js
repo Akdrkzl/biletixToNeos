@@ -1,4 +1,4 @@
-// !NAVBAR
+// !NAVBAR-START
 //* navbar kategori gizleme 
 let navbarEye = document.getElementById('navbar-eye')
 let navbarKategori = document.getElementById('navbar-kategori')
@@ -12,6 +12,19 @@ function toggleNavbar(){
     navbarXmark.classList.toggle('navbar-xmark')
     navbarKategori.classList.toggle('navbar-kategori')
 }
+
+// !LİNK GRUBU DETAY BÖLÜMÜ
+// Link grubu data ile yaptım
+const linkGrup = document.querySelectorAll('.link-grup')
+linkGrup.forEach((element) =>{
+    element.addEventListener('click',()=>{
+        const linkDetayAcik = document.querySelector(element.dataset.target)
+        linkDetayAcik.classList.toggle('link-aktif')
+    })
+
+})
+
+//!NAVBAR-END
 
 
 
