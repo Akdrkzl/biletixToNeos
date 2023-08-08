@@ -72,14 +72,36 @@
     text-decoration: none !important;
 }
 
-/* !NAVBAR */
-/** navbar */
+/* !NAVBAR-START */
+/*! navbar-ust */
+/*navbarın üst kısım ile ilgili css kodları  */
+.ust-nav{
+    max-width: 956px  !important;
+}
+/*! navbar */
+/* navbarda linklerin bulunduğu kısım */
+
 .navbar{
     font-family: Arial, Helvetica, sans-serif;
     background: var(--navbar-background-image) !important;
 }
 .navbar-nav{
     flex-direction: row !important;
+}
+/**navbar-link-grubu  */
+.link-grubu li:hover{
+    background-color: #0151a8 !important;
+}
+.link-grup:after{
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    margin-left:-315px;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
 }
 /**navbar-search*/
 .navbar-search{
@@ -88,32 +110,34 @@
     border: 1px solid white !important;
     border-radius: 5px !important;
     outline: none !important;
-    background-color: #0155b0;
+    background-color: #217bdd;
 }
 .navbar-search::placeholder {
     color: white !important;
     padding-left: 5px !important;
 }
 /**navbar-search-focus*/
+/* navbar-search focus odluğunda bu özellikleri verdim */
 .navbar-search:focus {
     background-color: white !important;
     transition: 0.3s;
 }
 .navbar-search:focus + .navbar-search-buton {
-    background-image: url(./img/mag3.png) !important;
+    background-image: url(../img/mag3.png) !important;
     background-color: #ffffff !important;
 }
 .navbar-search:focus + .navbar-search-buton:hover {
-    background-image: url(./img/mag3w.png) !important;
+    background-image: url(../img/mag3w.png) !important;
     background-color: #009cde !important;
 }
 /** navbar-search-buton */
+/* search kısmında bulunan loguyu konumladırdım */
 .navbar-search-buton {
-    background-image: url(./img/mag3w.png);
+    background-image: url(../img/mag3w.png);
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 64% !important;
-    background-color: #0155b0 !important;
+    background-color:#217bdd!important;
     border: none !important;
     border-radius: 4px !important;
     height: 96% !important;
@@ -131,7 +155,7 @@
 .navbar-eye{
     display: none !important;
 }
-
+/** navbar xmark */
 #navbar-xmark{
     display: none;
 }
@@ -139,13 +163,43 @@
     display: block !important;
 }
 
-/** navbar-kategori  */
+/*! navbar-kategori  */
+/** navbarda kategori kısmı */
+/* navbar içinde bulunan kategorilerin select uzunluğunu ayarladım */
+.navbar-kategori-select select{
+    width: 190px;
+    border: 1px solid #abc3db !important;
+    color: #2d4791 !important;
+}
+/* navbar-kategori içinde bulunana spanların rengini değiştirdim */
+.navbar-kategori-select span{
+    color: #2d4791;
+    font-size: 12px;
+}
+/* !navbarlink-grup-detay */
+/* link grubunun açılıp kapanması için gereken css */
+.link-detay{
+    display: none;
+}
+.link-detay a{
+    font-size: 12px !important;
+}
+.link-detay a:hover{
+    color: #1085b7 !important;
+    text-decoration: underline !important;
+}
+.link-aktif{
+    display: block;
+}
 
-
-/** navbar-responsive */
+/*! navbar-responsive ilk break-point */
 @media screen and (max-width:1000px) {
+    /* üst navbarın 2.ulsini ilk break pointte d-none yaptım */
+    .ust-nav ul:nth-child(2){
+        display: none !important;
+    }
     .navbar-responsive{
-        justify-content: space-evenly !important;
+        justify-content: space-between !important;
     }
     /* navbar içindeki link grubu */
     .navbar-content ul:first-child{
@@ -157,9 +211,18 @@
     /* bar-menu görünür oluyor*/
     .bar-menu{
         display: block !important;
+        cursor: pointer;
+    }
+    .navbar-kategori-select ul li div i{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .navbar-kategori-select ul li {
+        margin: 0 !important;
     }
 }
 
+/* !ikinci break-point */
 @media screen and (max-width:768px){
     /* elemanlar arasında boşluk bırakmak için between kullandım */
     .navbar-responsive{
@@ -182,12 +245,42 @@
     .navbar-search{
         width: 100% !important;
     }
-    /* kategoriyi gizlemek için kullandım */
+
+    /**navbar-kategori */
+    /* kategoriyi gizlemek ve column yapmak için kullandım */
     .navbar-kategori{
         display: none;
     }
-    
+
+    /* kategori responsive olduktan sonra column ile alt alta aldım */
+    .navbar-kategori-responsive{
+        flex-direction: column !important; 
+        align-items: start !important;
+        margin-top: 5px !important;
+
+    }
+    .navbar-kategori-select{
+        width: 100% !important;
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .navbar-kategori-select ul{
+        width: 100% !important;
+        padding-bottom: 15px !important;
+    }
+    .navbar-kategori-select select{
+        width: 100% !important;
+        padding: 5px !important;
+
+    }
+
+    /* navbar-kategori içinde bulunana spanların rengini değiştirdim */
+    .navbar-kategori-select span{
+        display: none;
+    }
 }
+/* !NAVBAR-END */
+
 
 /* CAROUSEL START*/
 
