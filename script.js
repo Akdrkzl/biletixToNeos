@@ -27,6 +27,53 @@ linkGrup.forEach((element) =>{
 //!NAVBAR-END
 
 
+// HOTTICKETS-YENİ&YAKINDAGELECEKLER JS BAŞLANGIÇ KISMI 
+
+let tikla = document.querySelector (".satis")
+tikla.addEventListener("click",
+function(){
+let hotSatis = document.querySelector (".satis")
+hotSatis.style.border="2px solid #e6e6e6" 
+hotSatis.style.borderBottom="none"  
+
+let hotSatis2 = document.querySelector(".ticket")
+hotSatis2.style.border="none"
+hotSatis2.style.borderBottom="2px solid #e6e6e6"
+
+let hotSatis3 = document.querySelector(".hottickettt")
+hotSatis3.style.display = "none"
+
+let hotSatis4 = document.querySelector(".yenisatisss")
+hotSatis4.style.display="block"
+
+
+
+});
+
+let tiklaa = document.querySelector(".ticket")
+tiklaa.addEventListener("click",
+function(){
+let hotSatis = document.querySelector (".ticket")
+hotSatis.style.border="2px solid #e6e6e6" 
+hotSatis.style.borderBottom="none"  
+
+let hotSatis2 = document.querySelector(".satis")
+hotSatis2.style.border="none"
+hotSatis2.style.borderBottom="2px solid #e6e6e6"
+
+
+let hotSatis3 = document.querySelector(".yenisatisss")
+hotSatis3.style.display = "none"
+
+let hotSatis4 = document.querySelector(".hottickettt")
+hotSatis4.style.display="block"
+
+
+
+});
+
+// HOTTICKETS-YENİ&YAKINDAGELECEKLER JS SON KISMI 
+
 
  // footer js start
         const acordionItems = document.querySelectorAll('.footer-main-acordion-item');

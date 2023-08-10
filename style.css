@@ -393,6 +393,7 @@
 
 /* CAROUSEL END */
 
+
 /* ONE CIKANLAR */
 
 .header-wrapper {
@@ -521,82 +522,115 @@ p {
 /* CAROUSEL END */
 
 
-/*!MÜZİK-HTML-CSS-BAŞLANGIÇ */
-/* !Kategori-Link-Grubu */
-.kategori-link a{
-  border: 1px solid #f2f2f2 !important;
-  background-color:#F2F2F2 !important ;
-  color: #717171 !important;
-  height: 41px !important;
-}
-
-.kategori-link a:hover{
-  background-color:#fff !important ;
-  text-decoration:underline !important;
-  color: #23527c !important;
-  transition: .1s;
-}
-
-.kategori h1 {
-  font-size: 28.5px;
+/* HOTTICKETS-YENİ&YAKINDAGELECEKLER BAŞLANGIÇ */
+.hot ul li{
+text-decoration: none;
+float: left;
+list-style-type: none;
+margin: 12px;
+/* height: 51px; */
+font-size: 24px;
 }
 
 
-.hotticket ul{
-  border-bottom: 3px solid #e6e6e6;
-  height: 65px !important;
-}
-.hotticket ul li{
-  float: left;
-  border: 3px solid #e6e6e6 !important;
-  border-bottom: none !important;
-  background-color: white !important;
+.hot ul li a{
+text-align: center !important;
+text-decoration: none;
+color:#414141;
 }
 
-.etkinlik{
-  border-bottom: 1px solid #e6e6e6;
-  border-right: 2px solid #e6e6e6;
+.spor h2{
+  text-align: left;
   margin: auto;
+  /* height: 51px; */
+  font-size: 28px;
+  /* padding: 7px 0px; */
+  }
+  .spor h2 a:hover{
+    text-decoration: underline !important;
+    color: var(--turquoise);
+
+  }
+
+  .card:hover{
+    background-color: var(--grayish-white) ;
+    text-decoration: underline;
+   
+  }
+
+.spor a{
+  text-decoration: none;
+  color: #414141;
 }
 
-.etkinlik-gün{
-  justify-content: center !important;
+
+.date{
+  display: flex;
+  justify-content: center;
+ 
 }
 
-.performans-ismi a{
-  color: #414141 !important;
+.date .day{
+  padding-right: 5px !important;
+}
+.day{
+  font-size: 48px;
 }
 
-.performans-ismi a:hover{
-  color: #009cde !important;
-}
 
 
-.etkinlik-mekani{
-  color: #999999 !important;
-  font-size: 11px !important;
+.hotTicketss{
+border-bottom: 2px solid  #e6e6e6;
+border-right: 2px solid  #e6e6e6;
 
 }
+.hotTicketss p{
+  margin: 0;
+}
 
-.etkinlik-tarihi{
-  color: #414141 !important;
-  font-size: 12px !important;
-  font-weight: 500;
+/* .col-7 p{
+  margin: 0;
+} */
+/* .col-3 p{
+  margin: 0;
+} */
+
+
+.satis{
+  border-bottom:2px solid #e6e6e6 ;
+  
+}
+.ticket{
+  padding: 20px;
+  border: 2px solid #e6e6e6;
+  border-bottom: none;
   
 }
 
-.etknlik-text{
-  font-size: 14px;
-  font-weight: 500;
+
+
+.yenisatisss{
+  display: none;
 }
 
-.icon-tarih{
-  color: #009cde;
-  font-size: 11px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+
+@media screen and (max-width : 768px) {
+  .satis{
+    border: none !important;
+    text-align: center;
+  }
+  .ticket{
+    border: none !important;
+  }
+
+  .hot ul li{
+    text-align: center !important;
+    float: none;
+    
+  }
+
 }
-/*!MÜZİK-HTML-CSS-SON */
+/* <!-- HOTTICKETS-YENİ&YAKINDAGELECEKLER SON --> */
 
 
 
