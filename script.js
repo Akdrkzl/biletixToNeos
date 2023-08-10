@@ -109,3 +109,25 @@ hotSatis4.style.display="block"
         });
 
         // footer js end
+
+
+// muzik html sayfası
+//  KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ
+
+let gizle = document.querySelector(".d2");
+let tiklad1 = document.querySelector(".d1");
+tiklad1.addEventListener("click", function () {
+    let goster = document.querySelector(".d3");
+    goster.classList.toggle("d3-active");
+    tiklad1.style.display = "none";
+    gizle.style.display = "block";
+});
+
+gizle.addEventListener("click", function () {
+    gizle.style.display = "none";
+    let goster = document.querySelector(".d3");
+    goster.classList.remove("d3-active");
+    tiklad1.style.display = "block";
+});
+
+//  KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ
