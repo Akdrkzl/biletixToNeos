@@ -727,3 +727,111 @@ border-right: 2px solid  #e6e6e6;
             }
         }
         /* !footerMain end */
+
+/*müzik html*/
+/* ! KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ */
+.kategori-link a{
+    border: 1px solid #f2f2f2 !important;
+    background-color:#F2F2F2 !important ;
+    color: #717171 !important;
+    height: 41px !important;
+    text-decoration: none;
+}
+
+.kategori-link a:hover{
+    background-color:#fff !important ;
+    text-decoration:underline !important;
+    color: #23527c !important;
+    transition: .1s;
+}
+
+.kategori h1 {
+    font-size: 28.5px;
+}
+
+.hotticket ul{
+    border-bottom: 3px solid #e6e6e6;
+    height: 65px !important;
+}
+.hotticket ul li{
+    float: left;
+    border: 3px solid #e6e6e6 !important;
+    border-bottom: none !important;
+    background-color: white !important;
+}
+
+.etkinlik{
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 2px solid #e6e6e6;
+    margin: auto;
+}
+
+.etkinlik-gün{
+    justify-content: center !important;
+}
+
+.performans-ismi a{
+    color: #414141 !important;
+}
+
+.performans-ismi a:hover{
+    color: #009cde !important;
+}
+
+
+.etkinlik-mekani{
+    color: #999999 !important;
+    font-size: 11px !important;
+
+}
+
+.etkinlik-tarihi{
+    color: #414141 !important;
+    font-size: 12px !important;
+    font-weight: 500;
+    
+}
+
+.etknlik-text{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.icon-tarih{
+    color: #009cde;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+
+}
+
+.date .day{
+    padding-right: 5px !important;
+}
+.day{
+    font-size: 48px;
+}
+
+.d3-active{
+    display: block !important;
+}
+
+@media screen and (max-width : 768px){
+    #res{
+        margin-left: 55px;
+    }
+}
+
+@media screen and (max-width : 515px){
+    #res{
+        margin-left: 30px;
+    }
+}
+
+/* ! KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ */
