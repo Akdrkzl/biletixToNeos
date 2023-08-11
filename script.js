@@ -100,7 +100,9 @@ tumTrAc.forEach((element) =>{
 
 let tikla = document.querySelector (".satis")
 tikla.addEventListener("click",
-function(){
+function ticketSatis(){
+    if (tikla)
+    {
 let hotSatis = document.querySelector (".satis")
 hotSatis.style.border="2px solid #e6e6e6" 
 hotSatis.style.borderBottom="none"  
@@ -114,14 +116,17 @@ hotSatis3.style.display = "none"
 
 let hotSatis4 = document.querySelector(".yenisatisss")
 hotSatis4.style.display="block"
-
+}
 
 
 });
 
+
 let tiklaa = document.querySelector(".ticket")
 tiklaa.addEventListener("click",
-function(){
+function ticketSatis2(){
+
+if (tiklaa) {
 let hotSatis = document.querySelector (".ticket")
 hotSatis.style.border="2px solid #e6e6e6" 
 hotSatis.style.borderBottom="none"  
@@ -138,7 +143,7 @@ let hotSatis4 = document.querySelector(".hottickettt")
 hotSatis4.style.display="block"
 
 
-
+}
 });
 
 // HOTTICKETS-YENİ&YAKINDAGELECEKLER JS SON KISMI 
