@@ -15,14 +15,16 @@ function toggleNavbar(){
 
 // !LİNK GRUBU DETAY BÖLÜMÜ
 // Link grubu data ile yaptım
-const linkGrup = document.querySelectorAll('.link-grup')
-linkGrup.forEach((element) =>{
-    element.addEventListener('click',()=>{
-        const linkDetayAcik = document.querySelector(element.dataset.target)
-        linkDetayAcik.classList.toggle('link-aktif')
-    })
-
-})
+let aktifDiv = null;
+function linkMenu(link){
+    const linkGrupId = link.dataset.target;
+    const linkGrup = document.getElementById(linkGrupId);
+    if (aktifDiv !== null && aktifDiv !== linkGrup) {
+        aktifDiv.style.display = "none";
+    }
+    linkGrup.style.display = linkGrup.style.display === "block" ? "none" : "block";
+    aktifDiv = linkGrup.style.display === "block" ? linkGrup : null;
+}
 
 //!NAVBAR-HAMBURGER-MENU-START
 function barMenu(){
@@ -180,21 +182,26 @@ hotSatis4.style.display="block"
 
 // muzik html sayfası
 //  KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ
-
-let gizle = document.querySelector(".d2");
-let tiklad1 = document.querySelector(".d1");
-tiklad1.addEventListener("click", function () {
-    let goster = document.querySelector(".d3");
-    goster.classList.toggle("d3-active");
-    tiklad1.style.display = "none";
-    gizle.style.display = "block";
-});
-
-gizle.addEventListener("click", function () {
-    gizle.style.display = "none";
-    let goster = document.querySelector(".d3");
-    goster.classList.remove("d3-active");
-    tiklad1.style.display = "block";
-});
+function gosterGizleMuzik(){
+    let gizle = document.querySelector(".d2");
+    let tiklad1 = document.querySelector(".d1");
+    if(tiklad1){
+       tiklad1.addEventListener("click", function () {
+        let goster = document.querySelector(".d3");
+        goster.classList.toggle("d3-active");
+        tiklad1.style.display = "none";
+        gizle.style.display = "block";
+        }); 
+    }    
+    if(gizle){
+        gizle.addEventListener("click", function () {
+        gizle.style.display = "none";
+        let goster = document.querySelector(".d3");
+        goster.classList.remove("d3-active");
+        tiklad1.style.display = "block";
+        });
+    }
+}
+gosterGizleMuzik()
 
 //  KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ
