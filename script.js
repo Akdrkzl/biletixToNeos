@@ -24,6 +24,73 @@ linkGrup.forEach((element) =>{
 
 })
 
+//!NAVBAR-HAMBURGER-MENU-START
+function barMenu(){
+    const barOpenElements = document.querySelectorAll('.bar-menu')
+    barOpenElements.forEach((element) => {
+        element.addEventListener('click',() =>{
+            const hamburgerMenu = document.querySelector('.hamburger-menu')
+            hamburgerMenu.classList.add('hamburger-menu-aktif')
+            if(hamburgerMenu.classList.contains('hamburger-menu-aktif')){
+            }
+                
+        })
+    })
+
+    const ok = document.querySelectorAll('.ok')
+    ok.forEach((e) => {
+        e.addEventListener('click', ()=>{
+            const hamburgerMenu = document.querySelector('.hamburger-menu')
+            if(hamburgerMenu.classList.contains('hamburger-menu-aktif')){
+            hamburgerMenu.classList.remove('hamburger-menu-aktif')
+            }
+        })
+    })
+    
+}
+barMenu()
+
+
+//* üst-div-TR
+//* üst div'de bulunan TR bölümünün hamburger-menu yapısı
+const trAc = document.querySelectorAll('#tr')
+trAc.forEach((element) =>{
+    element.addEventListener('click', () =>{
+        const hamburgerMenuTr = document.querySelector('.hamburger-menu-tr')
+        hamburgerMenuTr.classList.toggle('hamburger-menu-aktif')
+    });
+
+    const ok = document.querySelectorAll('#ok-tr')
+    ok.forEach((e) => {
+        e.addEventListener('click', ()=>{
+            const hamburgerMenuTr = document.querySelector('.hamburger-menu-tr')
+            if(hamburgerMenuTr.classList.contains('hamburger-menu-aktif')){
+            hamburgerMenuTr.classList.remove('hamburger-menu-aktif')
+            }
+        })
+    })
+});
+
+//*üst-div-Tüm-Türkiye 
+//* üst div'de bulunan Tüm Türkiye bölümünün hamburger-menu-yapısı
+const tumTrAc = document.querySelectorAll('#tum-tr')
+tumTrAc.forEach((element) =>{
+    element.addEventListener('click', () =>{
+        const hamburgerMenuTumTr = document.querySelector('.hamburger-menu-tum-tr')
+        hamburgerMenuTumTr.classList.toggle('hamburger-menu-aktif')
+    });
+
+    const ok = document.querySelectorAll('#ok-tum-tr')
+    ok.forEach((e) => {
+        e.addEventListener('click', ()=>{
+            const hamburgerMenuTumTr = document.querySelector('.hamburger-menu-tum-tr')
+            if(hamburgerMenuTumTr.classList.contains('hamburger-menu-aktif')){
+            hamburgerMenuTumTr.classList.remove('hamburger-menu-aktif')
+            }
+        })
+    })
+});
+//!NAVBAR-HAMBURGER-MENU-END
 //!NAVBAR-END
 
 
