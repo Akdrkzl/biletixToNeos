@@ -456,6 +456,79 @@
 
 /* CAROUSEL END */
 
+/* Müzik Sahne CSS Start */
+    .muzik-sahne-content {
+      width: 75%;
+      background-color: white;
+
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      margin: auto !important;
+
+
+
+    }
+
+    .muzik-sahne-content a {
+      text-decoration: none;
+
+    }
+
+    .muzik-sahne-content img {
+      max-width: 160px;
+
+    }
+
+    .muzik-sahne-card {
+      border-radius: 0%;
+      margin-bottom: 10px;
+
+
+    }
+
+    .muzik-sahne-card-text {
+      text-align: left;
+      font-size: small;
+    }
+
+    .card1-body {
+      padding-bottom: 50px;
+    }
+
+    .card2-body {
+      padding-bottom: 67px;
+    }
+
+    .card3-body {
+      padding-bottom: 67px;
+    }
+
+    .card4-body {
+      padding-bottom: 50px;
+    }
+
+    .card5-body {
+      padding-bottom: 50px;
+    }
+
+    .card6-body {
+      padding-bottom: 50px;
+    }
+
+    .card7-body {
+      padding-bottom: 50px;
+    }
+
+    .card8-body {
+      padding-bottom: 50px;
+    }
+
+    .card9-body {
+      padding-bottom: 50px;
+    }
+    /* Müzik Sahne CSS End */
+
 
 /* ONE CIKANLAR */
 
