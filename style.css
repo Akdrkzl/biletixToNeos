@@ -92,7 +92,7 @@
 .link-grubu li:hover{
     background-color: #0151a8 !important;
 }
-.link-grup:after{
+/* .link-grup:after{
     content: "";
     position: absolute;
     display: block;
@@ -102,7 +102,7 @@
     border-right: 10px solid transparent;
     border-bottom: 10px solid #fff;
     border-left: 10px solid transparent;
-}
+} */
 /**navbar-search*/
 .navbar-search{
     width: 300px !important;
@@ -155,12 +155,18 @@
 .navbar-eye{
     display: none !important;
 }
+#navbar-eye{
+  cursor: pointer !important;
+
+}
 /** navbar xmark */
 #navbar-xmark{
     display: none;
 }
 .navbar-xmark{
     display: block !important;
+  cursor: pointer !important;
+
 }
 
 /*! navbar-kategori  */
@@ -179,7 +185,7 @@
 /* !navbarlink-grup-detay */
 /* link grubunun açılıp kapanması için gereken css */
 .link-detay{
-    display: none;
+  display: none;
 }
 .link-detay a{
     font-size: 12px !important;
@@ -219,6 +225,11 @@
     }
     .navbar-kategori-select ul li {
         margin: 0 !important;
+    }
+
+    /* link detay */
+    .link-detay{
+      display: none !important;
     }
 }
 
@@ -279,11 +290,63 @@
         display: none;
     }
 }
+
+/* !Hamburger-Menu-Start */
+.hamburger-accordion-button:not(.collapsed){
+  background-color: #fff !important;
+}
+.hamburger-accordion-button:focus{
+  border-color: #fff !important;
+  box-shadow: none !important;
+}
+.hamburger-menu, .hamburger-menu-tr, .hamburger-menu-tum-tr{
+  background-color: #fff;
+  width: 0px;
+  overflow-y: auto;
+  transition: width 0.5s;
+  z-index: 111 !important;
+}
+.hamburger-menu-aktif{
+  width: 450px;
+}
+.ok{
+  cursor: pointer;
+}
+.hamburger-link{
+  height: 93%;
+}
+.hamburger-link ul li a{
+  color: #353c42;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* hamburger menü içerisindeki tüm a etiketlerine hover verdim */
+.hamburger-link ul li a:hover, .hamburger-menu-tr .hamburger-link a:hover, .hamburger-menu-tum-tr .hamburger-link a:hover{
+  text-decoration: underline !important;
+}
+/* hamburger menü içerisindeki tüm a etiketlerine color ve fs verdim */
+.hamburger-link ul li h2 button, .hamburger-menu-tr .hamburger-link a, .hamburger-menu-tum-tr .hamburger-link a{
+  color: #353c42;
+  font-size: 13px !important;
+}
+@media screen and (min-width:1001px) {
+  .hamburger-menu{
+      display: none;
+  }
+}
+@media screen and (max-width:768px){
+  .hamburger-menu, .hamburger-menu-tr, .hamburger-menu-tum-tr{
+      width: 0px;
+  }
+  .hamburger-menu-aktif{
+      min-width: 100vw;
+  }
+}
+/* !Hamburger-Menu-End */
 /* !NAVBAR-END */
 
 
 /* CAROUSEL START*/
-
 /* carousel  */
 
 #carouselExampleCaptions {
