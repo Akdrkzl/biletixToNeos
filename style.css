@@ -659,17 +659,19 @@ p {
 
 
 /* HOTTICKETS-YENİ&YAKINDAGELECEKLER BAŞLANGIÇ */
+ 
 .hot ul li{
 text-decoration: none;
 float: left;
 list-style-type: none;
-margin: 12px;
-/* height: 51px; */
+margin:  5px;
+height: 51px;
 font-size: 24px;
+padding: 0px;
 }
 
 
-.hot ul li a{
+.hot ul li span{
 text-align: center !important;
 text-decoration: none;
 color:#414141;
@@ -749,6 +751,14 @@ border-right: 2px solid  #e6e6e6;
   display: none;
 }
 
+#ticket1 ul li{
+  margin: 0;
+  justify-content: center !important;
+}
+#ticket1 ul li span{
+  text-align: center;
+  /* margin: 24px !important; */
+}
 
 @media screen and (max-width : 768px) {
   .satis{
@@ -765,7 +775,22 @@ border-right: 2px solid  #e6e6e6;
     
   }
 
+  
 }
+@media screen and (max-width : 992px) {
+
+  #ticket1 ul li span{
+    text-align: center !important;
+    text-decoration: none;
+    color:#414141;
+    font-size: 28px;
+    margin-top: 12px;
+    }
+  
+}
+
+
+
 /* <!-- HOTTICKETS-YENİ&YAKINDAGELECEKLER SON --> */
 
 
