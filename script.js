@@ -210,3 +210,95 @@ function gosterGizleMuzik(){
 gosterGizleMuzik()
 
 //  KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ
+
+
+
+
+
+
+/* (footer) Hesabım-(Hesap Oluştur ) createAccount.html START (hesabım sayfasının içinde bulunan sayfa) */
+ 
+  // tr tel no js 
+  let telephone= document.getElementById("country-select")
+  if(telephone){
+    telephone.addEventListener("change", function() {
+      var selectedValue = this.value;
+      var phoneInput = document.getElementById("tr-tel");
+  
+      if (selectedValue === "90") {
+          phoneInput.style.visibility = "visible";
+      } else {
+          phoneInput.style.visibility = "hidden";
+      }
+  });
+  }
+
+//modal box(1.checkbox'a basıldığında)
+
+var modal = document.getElementById("modalBoxForm");
+
+var checkBox = document.getElementById("defaultCheck1");
+var modalKapa = document.getElementsByClassName("modal-kapa")[0];
+var modalKapaİki = document.getElementsByClassName("modal-kapaiki")[0];
+
+
+// checkbox'a tıkladığında aç
+if(checkBox){
+checkBox.onclick = function() {
+  modal.style.display = "block";
+}
+}
+
+
+//modal dışında bir yere tıkladığında kapan
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+//okudum anladım ve onaylamadan çık'a basınca kapan
+if(modalKapa){
+modalKapa.onclick = function() {
+  modal.style.display = "none";
+}
+}
+if(modalKapaİki){
+modalKapaİki.onclick = function() {
+  modal.style.display = "none";
+}}
+    // disable checkbox için
+    let checkbox = document.getElementById('okudumAnladim');
+    let confirmButton = document.getElementById('confirmButton');
+
+   if(confirmButton){
+    confirmButton.addEventListener('click', () => {
+
+      checkbox.disabled = false;
+      checkbox.checked = true;
+    });
+  }
+/* (footer) Hesabım-account-(Hesap Oluştur ) createaccount.html  (hesabım sayfasının içinde bulunan sayfa) END  */
+
+// (footer-bize ulaşın-contactus) START
+
+/*select'  -bize ulasin */ 
+const selectElement = document.getElementById("sec");
+const divElements = document.querySelectorAll(".ulas-info");
+
+function update() {
+  const selectedOptionValue = selectElement.value;
+  divElements.forEach(div => {
+    if (div.id === selectedOptionValue + "Info") {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  });
+}
+if (selectElement){
+  selectElement.addEventListener("click", update);
+}
+
+update();
+
+//(footer-bize ulaşın-contactus) END
