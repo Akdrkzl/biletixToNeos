@@ -995,4 +995,23 @@ border-right: 2px solid  #e6e6e6;
     }
 }
 
-/* ! KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ */
+/* ! KATEGROİLER VE ETKİNLİK TARİHLERİ SON */
+
+/* !REKLAM VERİN -HTML-CSS-START */
+.reklam-content {
+  width: 80%;
+  background-color: white;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.reklam-left-side {
+  border-right: 1px solid gray;
+}
+
+.liste li {
+  list-style: inside;
+
+}
+/* !REKLAM-VERİN-HTML-CSS-END */
+
