@@ -1015,3 +1015,299 @@ border-right: 2px solid  #e6e6e6;
 }
 /* !REKLAM-VERİN-HTML-CSS-END */
 
+
+/* ! KURUM POLİTİKAMIZ BAŞLANGIÇ */
+
+/* h4 etiketi için */
+.text1{
+  color: #414160;
+  font-size: 15px;
+  font-weight: bold;
+  color: #414141;
+  margin-top: 23px;
+}
+
+/* h1 etiketi için */
+.textt-1{
+  color: #414160;
+  font-weight: bold;
+  color: #414141;
+  font-size: 30px;
+}
+
+/* kapsayıcı  altındaki div için */
+.content-1{
+  /* text-align: left; */
+  background: white;
+  padding: 15px 10px 15px 10px;
+  margin: 0px -20px 0px 0px;
+  width: 100%;
+  margin: auto;
+}
+
+/* ul etiketinden önceki p için */
+.text3{
+  padding: 0px 0px 10px;
+  color: #414141;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* listeler için */
+.kurumpol li {
+  color: #414141;
+  list-style-type: disc;
+
+}
+
+/* kapsayıcı div */
+.index-11{
+  background-color: #F7F7F7;
+  margin: auto;
+  width: 90%;
+}
+
+/* sayfanın en sonundaki seri no için */
+.end-1 {
+  opacity: 0.4;
+}
+
+
+/* RESPONSİVE */
+
+@media screen and (max-width: 999px) {
+
+  .index-11 {
+      width: 100%;
+  }
+
+  .textt-1 {
+    float: left;
+    padding: 5px;
+  }
+
+  .text1{
+      float: inline-start;
+      margin: 5px;
+  }
+
+  .text3 {
+      font-size: 12px;
+      padding: 4px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .content-1 {
+   display: flex;
+   flex-direction: column;  
+  }
+
+  .text1 {
+      margin: 0;
+      padding: 1px;
+  }
+
+  .textt-1 {
+      padding: 15px;
+      margin: 5px;
+  }
+
+  .text3 {
+      font-size: 15px;
+      padding: 4px;
+      margin: 0;
+  }
+
+.kurumpol li {
+  margin-left: 25px;
+  list-style-type: disc;
+}
+ 
+}
+/* ! KURUM POLİTİKAMIZ SON */
+
+
+/* ! SATIŞ KANALLARI BAŞLANGIÇ */
+
+/* ilk kapsayıcı */
+.satis-cont {
+  background-color: white;
+  width: 100%;
+  height: 100% !important;
+}
+
+/* ikinci kapsayıcı */
+.satis-cont1 {
+  background-color: #F7F7F7;
+}
+
+/* satış kanallarındaki 3 lü kart yapısı */
+.satis-card {
+  background-color: #F7F7F7;
+  border-radius: 0px;
+  width: 200px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card yapısı içindeki p etiketleri */
+.satis-text-1 {
+  text-decoration: none;
+  color: #414141;
+}
+
+/* RESPONSİVE */
+
+@media screen and (max-width: 768px) {
+  .img-cont {
+    display: none;
+  }
+
+  .satis-nav {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+  }
+  .container-satis {
+      margin: auto;
+      max-width: 100%;
+  }
+  .satis-cont1 {
+      background-color: #F7F7F7;
+  }
+
+  .satis-text-1 {
+    text-decoration: none;
+    color: #414141;
+    font-size: 15px;
+    margin: 0px 0px 4px;
+    white-space: nowrap;
+  }
+
+}
+
+
+@media screen and (max-width: 606px) {
+  .satis-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+
+
+/* ! SATIŞ KANALLARI SON */
+
+
+/* ! KARİYER BAŞLANGIÇ */
+
+/* container içindeki ilk p etiketi */
+.text-kariyer {
+  margin: 10px;
+  font-weight: 500;
+  text-align: end;
+  color: #009CDE;
+  font-size: 20px;
+}
+
+/* container içindeki ikinci p etiketi */
+.text-kariyer1 {
+  margin: 10px;
+  font-weight: 500;
+  text-align: end;
+  font-size: 20px;
+}
+
+/* p etiketi içindeki a'lar */
+.kariyer-a {
+  text-decoration: none;
+  color: #23528D;
+}
+
+
+/* card yapısındaki h5'ler için */
+/* .h5-card {
+  font-weight: bold;
+} */
+
+/* en dıştaki kapsayıcı div */
+.kariyer-cont {
+  background-color: #F7F7F7;
+  
+}
+
+/* card kapsayıcısının card bodysi */
+.card-body-kariyer {
+  background-color: #F8F8F7;
+}
+
+
+/* card kapsayıcısının card texti */
+.card-text-kariyer {
+  font-size: 14px;
+  color: #527093;
+}
+
+
+/* RESPONSİVE */
+
+@media screen and (max-width: 1000px) {
+  .text-kariyer {
+      text-align: start;
+      font-size: 14px;
+  }
+  .text-kariyer1 {
+      text-align: start;
+      font-size: 14px;
+  }
+  .kapsayan-container {
+      max-width: 1000px;
+      display: flex;
+  }
+  .card-title {
+      font-size: 15px;
+  }
+  .card-text-kariyer {
+      font-size: 12px;
+  }
+
+}
+
+
+/* Example: Hide an element on small screens */
+@media screen and (max-width: 768px) {
+  .kariyer-img {
+    display: none;
+  }
+
+ 
+  .kapsayan-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .btn {
+      width: 100%;
+      
+  }
+  .text-kariyer {
+      text-align: start;
+      font-size: 14px;
+  }
+  .text-kariyer1 {
+      text-align: start;
+      font-size: 14px;
+  }
+
+  .kariyer-cizgi {
+      width: 100%;
+  }
+
+}
+
+/* ! KARİYER SON */
