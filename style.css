@@ -1015,3 +1015,74 @@ border-right: 2px solid  #e6e6e6;
 }
 /* !REKLAM-VERİN-HTML-CSS-END */
 
+/*!MÜZİK-SAHNE-SPOR-AİLE-EĞİTİM&FAZLASI-HTML-CSS-SON */
+
+/* !GÖRSEL-MATERYAL-HTML-CSS-START */
+.materyal-content {
+  background-image: url(https://b2busdev.wpengine.com/wp-content/uploads/2022/03/top-left-v1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.materyal-title {
+  padding-top: 100px;
+}
+
+.materyal-published-date {
+  padding-top: 30px;
+}
+
+.materyal-marka {
+  padding-top: 20px;
+}
+
+.materyal-entry-content {
+  padding-top: 70px;
+}
+
+.social ul li {
+  width: 25px;
+}
+
+.social-share a {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.social ul li a img {
+  width: 100%;
+}
+
+/* Hover effect: reduce opacity on hover */
+.social ul li a img:hover {
+  opacity: 0.8;
+  /* You can add any other styles you want here */
+}
+
+.related-news h3 {
+  font-size: 30px;
+  line-height: 0.9;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.related-news ul li {
+  padding: 35px 12px;
+  border-top: 1px solid #121212;
+  font-size: 16px;
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: 2fr 4fr 6fr;
+  align-items: center;
+  cursor: pointer;
+}
+
+.related-news .news-title {
+  font-size: 26px;
+
+  line-height: 1.2;
+  padding-left: 15px;
+}
+/* !GÖRSEL-MATERYAL-HTML-CSS-END */
+
