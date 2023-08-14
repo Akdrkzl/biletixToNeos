@@ -1381,3 +1381,143 @@ border-right: 2px solid  #e6e6e6;
 }
 
 /* ! KARİYER SON */
+
+/** hesabım-account(footer) start**/
+
+
+.hesap-font{
+  font-family:  Arial, Helvetica, sans-serif;
+  color: #009cde;
+  
+}
+
+.hesap-buton-iki{
+  margin-top: 55px;
+  
+  
+}
+.hesap-buton{
+  margin-top: 140px;
+  
+  
+}
+.hesap-arkaplan{
+  background-color: #e0f6ff;
+}
+
+
+
+@media (max-width: 750px) {
+  .col-sm-alt {
+      flex-basis: 100%;
+     
+ 
+  }
+}
+
+
+/** hesabım-account(footer) end**/
+
+/**(footer) Hesap Oluştur-CreateAccount (Hesabım sayfası içinde bulunan) start **/
+
+
+
+.olustur-font{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.hesap-input{
+  width: 275px;
+   height: 32px; 
+   border: 1px solid #b1b1b1;
+   float: right;
+
+
+}
+
+.hesap-input-tel{
+  height: 32px;
+  border: 1px solid #b1b1b1;
+  float: right;
+ 
+}
+
+/** modal box **/
+.modal-form{
+display: none; 
+position: fixed; 
+z-index: 1; 
+left: 0;
+top: 0;
+width: 100%; 
+height: 100%;
+overflow: auto; 
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4); 
+
+}
+.content-form{
+background-color: #fefefe;
+margin: auto; 
+margin-top: 4%;
+
+}
+
+
+@media screen and (max-width: 1000px){
+  .uyelik-resim{
+    display: none !important;
+
+  }
+  .uyelik-sag{
+    display: none !important;
+  }
+  .uyelik-sol{
+    border: 0!important;
+    width: 100%!important;
+  }
+}
+/**(footer) Hesap Oluştur-CreateAccount (Hesabım sayfası içinde bulunan) end **/
+
+ /*  Bize Ulaşın (footer-contactus) start */
+ .bize-ulas-body{
+  background-color: #f7f7f7;
+}
+
+.bize-ulasin{
+  background-color: #f8f8f8;
+  height: 35vh!important;
+}
+
+
+.bize-ulasin-border{
+  border: 1px solid #ebe0e0;
+}
+
+.ulasin-font{
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif
+
+}
+
+.ulas-baslik{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 750px){
+.bize-ulasin{
+  flex-basis: 100%;
+  margin: 0 !important;
+  margin-top: 15px!important;
+ 
+    }
+  }
+  
+  .ulasin-font{
+    font-size: 10px!important;
+  }
+  .ulas-baslik{
+    font-size: 15px!important;
+  }
+
+/*  Bize Ulaşın (footer-contactus) end */
