@@ -1965,3 +1965,62 @@ font-family: Arial, Helvetica, sans-serif;
 
 /** GİRİŞ YAP/HESAP OLUŞTUR END  **/
 
+
+/* ! ETKİNLİK KATILIM START */
+.arkaplan-etkınlık-katılım{
+    width: 60%;
+    background: #f7f7f7;
+    margin-left: 20%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+#accordionFlushExample-etkınlık-katılım {
+    width: 65%;
+    --bs-accordion-active-bg: none;    
+}
+
+
+#focus-iptal{
+    box-shadow: none;
+    background-color: #dfdfdf;
+    padding: 5px 0px 5px 42px !important;
+}
+
+/* RESPONSİVE */
+
+@media screen and (max-width: 1000px) {
+    .arkaplan-etkınlık-katılım {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .container-etkınlık-katılım{
+        width: 100%;
+    }
+
+    #accordionFlushExample{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* ! img kaybetme */
+    .alianzfoto {
+
+        display: none;
+
+    }
+
+    #accordionFlushExample-etkınlık-katılım{
+        width: 100%;
+    }
+
+    #accordion-bodyrenk {
+        background-color: #dfdfdf;
+    }
+}
+/* ! ETKİNLİK KATILIM END */
+
