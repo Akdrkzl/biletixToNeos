@@ -99,10 +99,11 @@ tumTrAc.forEach((element) =>{
 // HOTTICKETS-YENİ&YAKINDAGELECEKLER JS BAŞLANGIÇ KISMI 
 
 let tikla = document.querySelector (".satis")
+if (tikla)
+{
 tikla.addEventListener("click",
 function ticketSatis(){
-    if (tikla)
-    {
+   
 let hotSatis = document.querySelector (".satis")
 hotSatis.style.border="2px solid #e6e6e6" 
 hotSatis.style.borderBottom="none"  
@@ -119,14 +120,15 @@ hotSatis4.style.display="block"
 }
 
 
-});
+)};
 
 
 let tiklaa = document.querySelector(".ticket")
+if (tiklaa) {
 tiklaa.addEventListener("click",
 function ticketSatis2(){
 
-if (tiklaa) {
+
 let hotSatis = document.querySelector (".ticket")
 hotSatis.style.border="2px solid #e6e6e6" 
 hotSatis.style.borderBottom="none"  
@@ -142,9 +144,9 @@ hotSatis3.style.display = "none"
 let hotSatis4 = document.querySelector(".hottickettt")
 hotSatis4.style.display="block"
 
-
 }
-});
+)};
+
 
 // HOTTICKETS-YENİ&YAKINDAGELECEKLER JS SON KISMI 
 
