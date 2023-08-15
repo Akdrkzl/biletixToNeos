@@ -1521,3 +1521,153 @@ font-family: Arial, Helvetica, sans-serif;
   }
 
 /*  Bize Ulaşın (footer-contactus) end */
+
+
+/* ETKİNLİK LİSTE DETAY START */
+
+  /* Liste Detay Body */
+
+  .etkinlik-liste-detay-body{
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-color: #f7f7f7;
+    color: #414141;
+    font: 12px/1.5 TmSans, Arial, 'Liberation Sans', FreeSans, sans-serif, tahoma, Verdana, 'Lucida Grande', 'Lucida Sans Unicode', 'Trebuchet MS', 'Helvetica Neue' !important;
+  }
+
+  /* Script Divleri */
+
+  .scriptgenel{
+  border: 1px solid gray;
+  display: none;
+  position: relative;
+  }
+  .scriptgenelactive{
+    display: block;
+  }
+  .eld-bottom{
+    bottom: 5px !important;
+    position: absolute;
+  }
+  .scriptconta{
+    background-color: #bbd5ee;
+    height: 30px;
+    color: #2d4791;
+    padding-top: 5px !important;
+  }
+  .eldc1{
+    border-right: 1px solid gray;
+    padding-left: 10px !important;
+  }
+  .eld-a{
+    color: #1f262d;
+    text-decoration: none !important;
+  }
+  .span1{
+    color: #009cde;
+  }
+
+
+  /* Geçici Div */
+
+  .gecicidiv{
+    width: 100%;
+    height: 110px;
+  }
+  /* Ana Kapsayıcı ve Yatay Renkli Çizgiler*/
+  
+  .etk-list-det-container{
+    margin: auto !important;
+    width: 100%;
+  }
+
+  .etk-list-det-content{
+    background: #768692;
+    color: #f7f7f7;
+    width: 94%;
+    height: 35px;
+    margin-top: 50px !important;
+    margin-left: 30px !important;
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  .etk-list-det-content2{
+    background-color: #bbd5ee;
+    margin-left: 30px !important;
+    width: 94%;
+    height: 35px;
+    position: relative;
+  }
+
+  .etk-list-det-con-devami{
+    height: 35px;
+    background-color: #cf1970;
+  }
+
+  .img1{
+    height: 35px;
+    display: flex;
+  }
+  .img1none{
+    height: 35px;
+    display: none;
+  }
+
+  /* İlk Resim İçeriği */
+  .img2{
+    width: 130px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px !important;
+    margin-left: 45px !important;
+  }
+
+  .etk-list-det-hr{
+    width: 94%;
+    margin-left: 30px !important;
+  }
+
+  .etk-list-det-a-1:hover{
+    color: #337ab7 !important;
+  }
+
+  
+  @media screen and (max-width: 1000px) {
+    .etk-list-det-content2{
+      display: none;
+    }
+    .etk-list-det-content{
+      background-color: #bbd5ee;
+    }
+    .etk-list-det-cont-text{
+      z-index: 1;
+    }
+    .img1none{
+      display: flex;
+      overflow: hidden;
+      z-index: 999;
+    }
+    .img1{
+      display: none;
+    }
+    .gecicidiv{
+      display: none;
+    }
+    .dens{
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .img2{
+      display: none;
+    }
+    .flex-img{
+      display: none;
+    }
+  }
+ /* ETKİNLİK LİSTE DETAY END */
