@@ -302,3 +302,15 @@ if (selectElement){
 update();
 
 //(footer-bize ulaşın-contactus) END
+
+
+// ETKİNLİK-LİSTE-JS-START
+const sonuc = document.querySelector('#sonuc')
+const divGoster = document.querySelector('.scriptgenel')
+if(sonuc){
+    sonuc.addEventListener('click', function(){
+        divGoster.classList.toggle('scriptgenelactive')
+    })
+}
+
+// ETKİNLİK-LİSTE-JS-END
