@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <!-- !bootstrap-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <!-- !NAVBAR-START -->
+    <header class="container-fluid p-0 m-0  mb-md-5">
+        <!-- üst-div -->
+        <div class="container-fluid bg-dark" style="height: 35px">
+          <div class="ust-nav m-auto d-flex justify-content-between h-100">
+            <ul class="d-flex align-items-center m-0 p-0 h-100">
+              <div class="me-3">
+                <a id="tr" class="text-light" href="#">
+                  <i  class="fa-solid fa-message" style="color: #ffffff"></i>
+                  TR
+                </a>
+              </div>
+              <div class="">
+                <a id="tum-tr" class="text-light" href="#">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  Tüm Türkiye
+                </a>
+              </div>
+            </ul>
+            <ul class="ust-nav-items d-flex align-items-center m-0 p-0 h-100">
+              <div class="me-3">
+                <a class="text-light" href="#">
+                  <i class="fa-solid fa-gift"></i>
+                  Hediye Kartı
+                </a>
+              </div>
+              <div class="me-3">
+                <a class="text-light" href="#">Aylık Dergi</a>
+              </div>
+              <div class="me-3">
+                <a class="text-light" href="#">Blog</a>
+              </div>
+              <div class="me-3">
+                <a class="text-light" href="#">Yardım</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg flex-wrap p-1">
+          <div
+            class="navbar-responsive d-flex justify-content-center align-items-center w-100"
+          >
+            <!-- logo ve bar-menu -->
+            <div class="ms-2 d-flex align-items-center navbar-logo">
+              <i
+                class="fa-solid fa-bars fs-2 me-3 d-none bar-menu"
+                style="color: #ffffff"
+              ></i>
+              <a href="index.html" class="navbar-brand" href="#"
+                ><img src="./img/btx-logo.svg" alt=""
+              /></a>
+            </div>
+            <div class="me-2 d-flex align-items-center navbar-content">
+              <!-- link-grubu -->
+              <ul class="link-grubu navbar-nav me-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-bir"
+                    onclick="linkMenu(this)"
+                    >Müzik</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-iki"
+                    onclick="linkMenu(this)"
+                    >Sahne</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-uc"
+                    onclick="linkMenu(this)"
+                    >Spor</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-dort"
+                    onclick="linkMenu(this)"
+                    >Aile</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-bes"
+                    onclick="linkMenu(this)"
+                    >Eğitim&Fazlası</a
+                  >
+                </li>
+              </ul>
+              <!-- search-giriş yap ve eyes -->
+              <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item me-4 navbar-search-item-1">
+                  <form class="d-flex position-relative" role="search">
+                    <input
+                      class="navbar-search"
+                      type="search"
+                      placeholder="Etkinlik, sanatçı ya da mekan arayın"
+                      aria-label="Search"
+                    />
+                    <button
+                      class="position-absolute btn btn-outline-success navbar-search-buton"
+                      type="submit"
+                    ></button>
+                  </form>
+                </li>
+                <li class="nav-item eye me-3 d-md-none">
+                  <i
+                    id="navbar-eye"
+                    class="fa-solid fa-eye fs-3"
+                    style="color: #ffffff"
+                  ></i>
+                  <i
+                    id="navbar-xmark"
+                    class="fa-solid fa-xmark fs-3"
+                    style="color: #ffffff"
+                  ></i>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand fs-6 text-white m-0" href="#">
+                    <i class="fa-regular fa-circle-user fs-2 text-white"></i>
+                    <span>Giriş Yap</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- search-2 -->
+          <div class="w-100 mt-2 mx-2">
+            <ul
+              class="navbar-nav d-flex justify-content-center align-items-center w-100"
+            >
+              <li class="nav-item navbar-search-item-2 d-none w-100">
+                <form class="position-relative w-100" role="search">
+                  <input
+                    class="navbar-search w-100"
+                    type="search"
+                    placeholder="Etkinlik, sanatçı ya da mekan arayın"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="position-absolute btn btn-outline-success navbar-search-buton"
+                    type="submit"
+                  ></button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- navbar-kategori -->
+        <div id="navbar-kategori" class="navbar-kategori shadow position-absolute z-2 w-100 bg-light">
+          <div class="container-fluid">
+            <div
+              class="navbar-kategori-responsive d-flex justify-content-center align-items-center w-100"
+            >
+              <div class="navbar-kategori-select p-0">
+                <ul class="navbar-nav align-items-center">
+                  <li class="d-flex flex-column align-items-center me-2">
+                    <div>
+                      <i
+                        class="fa-solid fa-eye fs-5 icons"
+                        style="color: #2d4791"
+                      ></i>
+                    </div>
+                    <span> KEŞFET </span>
+                  </li>
+                  <li class="navbar-item ms-3 w-100">
+                    <select class="">
+                      <option selected="selected" value="-1">
+                        Tüm Kategoriler
+                      </option>
+                      <option value="MUSIC">MÜZİK</option>
+                      <option value="SPORT">SPOR</option>
+                      <option value="ART">SAHNE</option>
+                      <option value="FAMILY">AİLE</option>
+                      <option value="OTHER">Eğitim & Fazlası</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-kategori-select ms-3 p-0">
+                <ul class="navbar-nav align-items-center w-100">
+                  <li class="d-flex flex-column align-items-center">
+                    <div>
+                      <i
+                        class="fa-solid fa-calendar fs-5 navbar-kategori-icon"
+                        style="color: #2d4791"
+                      ></i>
+                    </div>
+                    <span class=""> TARİH </span>
+                  </li>
+                  <li class="navbar-item ms-3 w-100">
+                    <select class="">
+                      <option selected="selected" value="-1">Tüm Tarihler</option>
+                      <option value="today">Bugün</option>
+                      <option value="weekend">Hafta Sonu</option>
+                      <option value="nextweekend">Önümüzdeki Hafta Sonu</option>
+                      <option value="thisweek">Bu Hafta</option>
+                      <option value="next14days">Önümüzdeki 14 Gün</option>
+                      <option value="next30days">Önümüzdeki 30 Gün</option>
+                      <option id="seldatarange" value="daterange">
+                        Tarih Aralığı
+                      </option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-kategori-select ms-3 p-0">
+                <ul
+                  class="navbar-nav align-items-center justify-content-start w-100"
+                >
+                  <li class="d-flex flex-column align-items-center me-3">
+                    <div class="text-start">
+                      <i
+                        class="fa-solid fa-location-dot fs-5 navbar-kategori-icon"
+                        style="color: #2d4791"
+                      ></i>
+                    </div>
+                    <span> YER </span>
+                  </li>
+                  <li class="navbar-item ms-3 w-100">
+                    <select class="">
+                      <option selected="selected" value="-1">Tüm Türkiye</option>
+                      <option value="İstanbul">İstanbul</option>
+                      <option value="Ankara">Ankara</option>
+                      <option value="İzmir">İzmir</option>
+                      <option value="Adana">Adana</option>
+                      <option value="Afyonkarahisar">Afyonkarahisar</option>
+                      <option value="Antalya">Antalya</option>
+                      <option value="Aydın">Aydın</option>
+                      <option value="Balıkesir">Balıkesir</option>
+                      <option value="Batman">Batman</option>
+                      <option value="Bingöl">Bingöl</option>
+                      <option value="Bolu">Bolu</option>
+                      <option value="Bursa">Bursa</option>
+                      <option value="Çanakkale">Çanakkale</option>
+                      <option value="Denizli">Denizli</option>
+                      <option value="Diyarbakır">Diyarbakır</option>
+                      <option value="Düzce">Düzce</option>
+                      <option value="Edirne">Edirne</option>
+                      <option value="Elazığ">Elazığ</option>
+                      <option value="Erzurum">Erzurum</option>
+                      <option value="Eskişehir">Eskişehir</option>
+                      <option value="Gaziantep">Gaziantep</option>
+                      <option value="Giresun">Giresun</option>
+                      <option value="Hatay">Hatay</option>
+                      <option value="Isparta">Isparta</option>
+                      <option value="Kahramanmaraş">Kahramanmaraş</option>
+                      <option value="Kayseri">Kayseri</option>
+                      <option value="Kırıkkkale">Kırıkkkale</option>
+                      <option value="Kırklareli">Kırklareli</option>
+                      <option value="Kocaeli">Kocaeli</option>
+                      <option value="Konya">Konya</option>
+                      <option value="Kütahya">Kütahya</option>
+                      <option value="Malatya">Malatya</option>
+                      <option value="Manisa">Manisa</option>
+                      <option value="Mardin">Mardin</option>
+                      <option value="Mersin">Mersin</option>
+                      <option value="Muğla">Muğla</option>
+                      <option value="Nevşehir">Nevşehir</option>
+                      <option value="Niğde">Niğde</option>
+                      <option value="Ordu">Ordu</option>
+                      <option value="Sakarya">Sakarya</option>
+                      <option value="Samsun">Samsun</option>
+                      <option value="Şanlıurfa">Şanlıurfa</option>
+                      <option value="Sinop">Sinop</option>
+                      <option value="Sivas">Sivas</option>
+                      <option value="Tekirdağ">Tekirdağ</option>
+                      <option value="Tokat">Tokat</option>
+                      <option value="Trabzon">Trabzon</option>
+                      <option value="Uşak">Uşak</option>
+                      <option value="Yalova">Yalova</option>
+                      <option value="Yozgat">Yozgat</option>
+                      <option value="Zonguldak">Zonguldak</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-kategori-select ms-2 p-0 text-end">
+                <button class="btn btn-primary rounded-0">Git</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- linkler-detay-->
+        <div id="link-detay-bir" class="link-detay container-fluid p-0 m-0 bg-light shadow position-absolute z-3">
+          <div class="container p-3">
+            <div class="row p-2">
+              <a
+                class="col-3 me-5 border-bottom p-0 text-dark fw-bold"
+                href="muzik.html"
+                >Tüm Müzik Etkinlikleri</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Rock</a>
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Klasik</a
+              >
+            </div>
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Pop</a>
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Caz</a>
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Alternatif</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="link-detay-iki" class="link-detay container-fluid p-0 m-0 bg-light shadow position-absolute z-3">
+          <div class="container p-3">
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="#"
+                >Tüm Sahne Etkinlikleri</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Gösteri</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Stand-Up</a
+              >
+            </div>
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Tiyatro</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Bale-Dans</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="link-detay-uc" class="link-detay container-fluid p-0 m-0 bg-light shadow position-absolute z-3">
+          <div class="container p-3">
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="#"
+                >Tüm Spor Etkinlikleri</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Basketbol</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Voleybol</a
+              >
+            </div>
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Futbol</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Motor Sporları</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="link-detay-dort" class="link-detay container-fluid p-0 m-0 bg-light shadow position-absolute z-3">
+          <div class="container p-3">
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="#"
+                >Tüm Aile Etkinlikleri</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Tiyatro</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Theme-Park</a
+              >
+            </div>
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Gösteri</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Müzikli Gösteri</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Attraction Center</a
+              >
+            </div>
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Sirk</a>
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Zoo</a>
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Aile ve Çocuk</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="link-detay-bes" class="link-detay container-fluid p-0 m-0 bg-light shadow position-absolute z-3">
+          <div class="container p-3">
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark fw-bold" href="#"
+                >Eğitim & Fazlası</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Tiyatrolar</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Açık Hava</a
+              >
+            </div>
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Müze</a>
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Aile ve Çocuk</a
+              >
+            </div>
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Seyretix</a
+              >
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Komedi</a
+              >
+            </div>
+            <div class="row p-2">
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#">Kulüp</a>
+              <a class="col-3 me-5 border-bottom p-0 text-dark" href="#"
+                >Rap-Hiphop</a
+              >
+            </div>
+          </div>
+        </div>
+    </header>
+      <!-- !Hamburger-Menu-Start -->
+      <!--* Hamburger-Menu-Nav  -->
+      <div class="hamburger-menu position-fixed top-0 start-0 overflow-y-auto h-100" id="accordionMenu">
+            <div class="container-md h-100 m-0 p-0">
+                <div>
+                    <i id="ok" class="fa-solid fa-arrow-left ok text-start"></i>
+                    <h6 class="text-center">Menu</h6>
+                </div>
+                <div class="hamburger-link d-flex flex-column justify-content-between">
+                <ul class="accordion accordion-flush m-0 p-2" id="accordionFlushExample">
+                    <li class="accordion-item">    
+                    <h2 class="accordion-header border-bottom">
+                        <button class="accordion-button hamburger-accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Müzik
+                          </button>
+                      </h2>
+                    <span class="arrow-icon"></span>
+                    <ul id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <li class="p-2 border-bottom"><a class="fw-semibold" href="muzik.html">Tüm Müzik Etkinlikleri</a></li>
+                        <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Pop</a></li>
+                        <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Rock</a></li>
+                        <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Jazz</a></li>
+                        <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Klasik</a></li>
+                        <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Alternatif</a></li>
+                    </ul>
+                    </li>
+                    <li class="accordion-item">
+                        <h2 class="accordion-header border-bottom">
+                            <button class="accordion-button hamburger-accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Sahne
+                              </button>
+                          </h2>
+                        <span class="arrow-icon"></span>
+                        <ul id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Tüm Sahne Etkinlikleri</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Tiyatro</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Gösteri</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Bale-Dans</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Stand-Up</a></li>
+                        </ul>
+                    </li>
+                    <li class="accordion-item">
+                        <h2 class="accordion-header border-bottom">
+                            <button class="accordion-button hamburger-accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Spor
+                              </button>
+                          </h2>
+                        <span class="arrow-icon"></span>
+                        <ul id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Tüm Spor Etkinlikleri</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Futbol</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Basketbol</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Motor Sporları</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Voleybol</a></li>
+                        </ul>
+                    </li>
+                    <li class="accordion-item">
+                        <h2 class="accordion-header border-bottom">
+                            <button class="accordion-button hamburger-accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Aile
+                              </button>
+                          </h2>
+                        <span class="arrow-icon"></span>
+                        <ul id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Tüm Aile Etkinlikleri</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Gösteri</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Sirk</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Tiyatro</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Müzikli Gösteri</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Zoo</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Theme-Park</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Attraction Center</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Aile ve Çocuk</a></li>
+                        </ul>
+                    </li>
+                    <li class="accordion-item">
+                        <h2 class="accordion-header border-bottom">
+                            <button class="accordion-button hamburger-accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Eğitim & Fazlası
+                              </button>
+                          </h2>
+                        <span class="arrow-icon"></span>
+                        <ul id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Eğitim ve Fazlası</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Aile ve Çocuk</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Kulüp</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Tiyatrolar</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Müze</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Seyretix</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Komedi</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Rap-Hiphop</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Açıkhava</a></li>
+                            <li class="p-2 border-bottom"><a class="fw-semibold" href="#">Festival Zamanı</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="m-0 p-0" style="background:#f6f7f9;">
+                    <li class="p-3 border-bottom"><a class="fw-normal" href="#">Hediye Kartı</a></li>
+                    <li class="p-3 border-bottom"><a class="fw-normal" href="#">Aylık Dergi</a></li>
+                    <li class="p-3 border-bottom"><a class="fw-normal" href="#">Blog</a></li>
+                </ul>
+            </div>
+            </div>
+      </div>
+      <!--* Hamburger-Menu-TR  -->
+      <div class="hamburger-menu-tr position-fixed top-0 start-0 overflow-y-auto h-100" id="accordionMenu">
+        <div class="container-md h-100 m-0 p-0">
+            <div>
+                <i id="ok-tr" class="fa-solid fa-arrow-left ok text-start"></i>
+                <h6 class="text-center border-bottom">Dil</h6>
+            </div>
+            <div class="hamburger-link p-2">
+              <a class="d-block p-3 border-bottom fw-semibold" href="#">Türkçe</a>
+              <a class="d-block p-3 border-bottom fw-semibold" href="#">İngilizce</a>
+        </div>
+        </div>
+      </div>
+      <!--* Hamburger-Menu-Tum-Tr  -->
+      <div class="hamburger-menu-tum-tr position-fixed top-0 start-0 overflow-y-auto h-100" id="accordionMenu">
+            <div class="container-md h-100 m-0 p-0">
+                <div>
+                    <i id="ok-tum-tr" class="fa-solid fa-arrow-left ok text-start"></i>
+                    <h6 class="text-center border-bottom">Dil</h6>
+                </div>
+                <div class="hamburger-link p-2">
+                  <a class="d-block p-3 border-bottom fw-semibold" href="#">Tüm Türkiye</a>
+                  <a class="d-block p-3 border-bottom fw-semibold" href="#">İstanbul / Marmara</a>
+                  <a class="d-block p-3 border-bottom fw-semibold" href="#">Ankara / İç Anadolu</a>
+                  <a class="d-block p-3 border-bottom fw-semibold" href="#">İzmir / Ege</a>
+                  <a class="d-block p-3 border-bottom fw-semibold" href="#">Antalya / Akdeniz</a>
+                  <a class="d-block p-3 border-bottom fw-semibold" href="#">Diğer</a>
+            </div>
+            </div>
+      </div>
+      <!-- !Hamburger-Menu-Start -->
+      <!-- !NAVBAR-END -->
+    
+    <!-- !MAİN -->
+    <div class="container-fluid main m-0 p-0 ">
+      <div class="container-lg bg-light p-0 p-md-5">
+          
+    <!-- !ETKİNLİK-LİSTE-DETAY-BAŞLANGIÇ -->
+    <div class="container-fluid">
+        <div class="container-lg m-auto">
+                <!-- Kaybolan Div -->
+    <div class="gecicidiv"></div>
+    
+  
+    <!-- Kapsayıcı -->
+    <div class="etk-list-det-container bg-white">
+        <div class="scriptgenel">
+        <div class="scriptconta">
+            <div class="row ms-2 ">
+                <div class="col-3">Tarih Aralığı Seç</div>
+                <div class="col-3">Bölge</div>
+                <div class="col-3">Kategoriler</div>
+                <div class="col-3">Mekan</div>
+            </div>
+    </div>
+    <div class="scriptconta2">
+        <div class="row">
+            <div class="eldc1 col-3">
+                <table  class="m-3">
+                    <tr>
+                        <td class="pe-3 pb-2">Başlangıç</td>
+                        <td><input type="date" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Bitiş</td>
+                        <td><input type="date" name="" id=""></td>
+                    </tr>
+                </table>
+                <div class="btnaraara ps-5 ms-5 mt-2">
+                    <button class="bg-primary" style="width: 85px; color: #ffffff; border: none; height: 20px;">ARA</button>
+                </div>
+                <div class="eld-bottom"><a href="" class="fw-bold text-dark text-decoration-none">Seçimi Sıfırla</a></div>
+            </div>
+            <div class="eldc1 col-3">
+                <ul class="mt-2">
+                    <li><a class="eld-a" href="">İstanbul / Marmara </a><span class="span1">(62)</span></li>
+                    <li><a class="eld-a" href="">İzmir / Ege </a><span class="span1">(62)</span></li>
+                    <li><a class="eld-a" href="">Ankara / İç Anadolu</a> <span class="span1">(62)</span></li>
+                    <li><a class="eld-a" href="">Antalya / Akdeniz </a><span class="span1">(62)</span></li>
+                    <li><a class="eld-a" href="">Diğer </a><span class="span1">(62)</span></li>
+                </ul>
+            </div>
+            <div class="eldc1 col-3">
+                <strong>Müzik</strong> <br>
+                <ul>
+                <li class="ms-2"><a class="eld-a" href="">Rock </a><span class="span1">(62)</span></li>
+            </ul>
+            </div>
+            <div class="col-3" style="height: 200px; overflow-y: scroll;">
+                <ul>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                    <li class="ms-2"><a class="eld-a" href="">Bursa Açık Hava Tiyatrosu</a><span class="span1">(7)</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+       
+  
+        <p class="etk-list-det-p fw-bold ps-4 ms-2 pt-1">100'den fazla sonuç bulundu.</p>
+        <!-- Yatay Renkli Çizgi -->
+        <div class="etk-list-det-content"> 
+            <div class="etk-list-det-cont-text fw-bold ms-4 mt-1 ps-3 fs-6">Tüm Türkiye</div>
+            <div id="sonuc" class="etk-list-det-con-devami pe-2  d-flex align-items-center"> <a href="#"><img class="img1" src="./img/sonuc.png" alt=""></a> <a href="#"><img class="img1none" src="./img/sonuc2.png" alt=""></a>
+            </div>
+    </div>
+    <!-- Yatay Renkli Çizgi -->
+        <div class="etk-list-det-content2">
+            <div class="row ms-4 pt-1 fs-6">
+                <div class="col-8"><a class="elda1 text-decoration-none m-3 ms-3" style="color: #2d4791;" href="">Etkinlik<i class="fa-solid fa-chevron-down ms-1" style="color:  #2d4791;"></i></a></div>
+                <div class="col-2"><a class="elda1 text-decoration-none ms-3" style="color: #2d4791;" href="">Mekan <i class="fa-solid fa-chevron-down ms-1" style="color:  #2d4791;"></i></a> </div>
+                <div class="col-2"><a class="elda1 text-decoration-none ms-4 " style="color: #2d4791;" href="">Tarih <i class="fa-solid fa-chevron-down ms-1" style="color:  #2d4791;"></i></a> </div>
+            </div>
+        </div>
+  
+    <!-- 1.Resim -->
+  
+    <div class="etk-list-det-container-2 row">
+        <div class="col-3">
+            <a href=""><img class="img2" src="./img/etkdet1.jpg" alt=""></a>
+            </div>
+        <div class=" col-5 mt-3"><a href="" class="text-decoration-none text-dark"><b>mAnga</b></a>  <br>
+        <b class="text-primary">Satışta</b>
+        </div>
+        <div class="col-2 mt-3"><a class="etk-list-det-a-1 text-dark text-decoration-none text-center fw-bold " href="">Altın Güvercin <br> AmfiTyt. - Kuşadası <br></a> <b>Aydın</b>
+        </div>
+        <div class="col-2  mt-3"><a class="text-dark text-decoration-none" href=""> Pzt, 07/08/23</a>
+        </div>
+    </div> 
+    <hr class="etk-list-det-hr">       
+  
+    <!-- 2.Resim -->
+  
+    <div class="etk-list-det-container-2 row">
+        <div class="col-3">
+             <a href=""><img class="img2" src="./img/etkdet1.jpg" alt=""></a>
+            </div>
+        <div class=" col-5 mt-3"><a href="" class="text-decoration-none text-dark"><b>mAnga</b></a>  <br>
+        <b class="text-primary">Satışta</b>
+        </div>
+        <div class="col-2 mt-3"><a class="etk-list-det-a-1 text-dark text-decoration-none text-center fw-bold " href="">Altın Güvercin <br> AmfiTyt. - Kuşadası <br></a> <b>Aydın</b>
+        </div>
+        <div class="col-2  mt-3"><a class="text-dark text-decoration-none" href=""> Pzt, 07/08/23</a>
+        </div>
+    </div> 
+    <hr class="etk-list-det-hr">    
+    
+    <!-- 3.Resim -->
+  
+    <div class="etk-list-det-container-2 row">
+        <div class="col-3">
+            <a href=""><img class="img2" src="./img/etkdet1.jpg" alt=""></a>
+            </div>
+        <div class=" col-5 mt-3"><a href="" class="text-decoration-none text-dark"><b>mAnga</b></a>   <br>
+        <b class="text-primary">Satışta</b>
+        </div>
+        <div class="col-2 mt-3"><a class="etk-list-det-a-1 text-dark text-decoration-none text-center fw-bold " href="">Altın Güvercin <br> AmfiTyt. - Kuşadası <br></a> <b>Aydın</b>
+        </div>
+        <div class="col-2  mt-3"><a class="text-dark text-decoration-none" href=""> Pzt, 07/08/23</a>
+        </div>
+    </div> 
+    <hr class="etk-list-det-hr">    
+  
+    <!-- 4.Resim -->
+  
+    <div class="etk-list-det-container-2 row">
+        <div class="col-3">
+            <a href=""><img class="img2" src="./img/etkdet1.jpg" alt=""></a>
+            </div>
+        <div class=" col-5 mt-3"><a href="" class="text-decoration-none text-dark"><b>mAnga</b></a>   <br>
+        <b class="text-primary">Satışta</b>
+        </div>
+        <div class="col-2 mt-3"><a class="etk-list-det-a-1 text-dark text-decoration-none text-center fw-bold " href="">Altın Güvercin <br> AmfiTyt. - Kuşadası <br></a> <b>Aydın</b>
+        </div>
+        <div class="col-2  mt-3"><a class="text-dark text-decoration-none" href=""> Pzt, 07/08/23</a>
+        </div>
+    </div> 
+    <hr class="etk-list-det-hr">    
+  
+    <!-- 5.Resim -->
+  
+    <div class="etk-list-det-container-2 row">
+        <div class="col-3">
+            <a href=""><img class="img2" src="./img/etkdet1.jpg" alt=""></a>
+            </div>
+        <div class=" col-5 mt-3"><a href="" class="text-decoration-none text-dark"><b>mAnga</b></a>   <br>
+        <b class="text-primary">Satışta</b>
+        </div>
+        <div class="col-2 mt-3"><a class="etk-list-det-a-1 text-dark text-decoration-none text-center fw-bold " href="">Altın Güvercin <br> AmfiTyt. - Kuşadası <br></a> <b>Aydın</b>
+        </div>
+        <div class="col-2  mt-3"><a class="text-dark text-decoration-none" href=""> Pzt, 07/08/23</a>
+        </div>
+    </div> 
+    <hr class="etk-list-det-hr">    
+  
+    <!-- 6.Resim -->
+    <div class="etk-list-det-container-flex d-flex justify-content-center align-items-center w-100">
+    <div class="flex-1 " style="width: 13%; text-align: center;">
+       <a href=""> <img class="flex-img" src="./img/etkdet1.jpg" alt="" width="130px" height="80px"></a>
+    </div>
+    <div class="flex-2" style="width: 45%; text-align: center;">
+        <a href="" class="text-dark text-decoration-none"><b>mAnga</b></a> <br> 
+        <span class="text-primary fw-bold" >Satışta</span>
+    </div>
+   
+    <div class="flex-3 " style="width: 18%; text-align: center;">
+        <a href="" class="text-dark text-decoration-none fw-bold">
+            Altın Güvercin <br>
+            AmfiTyt. - Kuşadası</a> <br>
+            <span class="fw-bold">Aydın</span>
+    </div>
+    <div class="flex-4" style="width: 20%; text-align: center;">
+        <a href="" class="text-dark text-decoration-none">Pzt, 07/08/23</a>
+    </div>
+  </div>
+  
+  
+  
+  
+   
+    </div>
+        </div>
+    </div>
+    <!-- !ETKİNLİK-LİSTE-DETAY-SON -->
+
+
+
+      </div>
+    </div>
+    
+    <!-- !footer-start -->
+    <footer class="w-100 footer-main">
+        <div class="container w-75 m-auto">
+            <div class="row ">
+                <div class="col-xl-8">
+                    <div class="row mt-3 ">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6   footer-main-acordion-item ">
+                            <!-- !yardım edelim -->
+                            <h3 class="footer-main-acordion-header">YARDIM EDELİM<span class="footer-main-toggle-btn"></span></h3>
+                            <hr class="footer-main-line-1 w-80">
+                            <ul class="footer-main-acordion-content m-0 p-0 ">
+                                <li class="mb-3 mt-3">
+                                    <a href="https://help.biletix.com/hc/tr">Yardım/SSS</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href=" https://www.biletix.com/saleschannel/TURKIYE/tr ">Satış Kanalları
+                            </a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/hediyekart/tr ">Hediye Kart</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/insurance/DIGER/tr ">Etkinlik Katılım Sigortası</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/login/DIGER/tr/account ">Hesabım</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-main-acordion-item ">
+                            <!-- !hakkımızda-->
+                            <h3 class="footer-main-acordion-header ">HAKKIMIZDA<span class="footer-main-toggle-btn"></span></h3>
+                            <hr class="footer-main-line-1 w-80 ">
+                            <ul class="footer-main-acordion-content  m-0 p-0 ">
+                                <li class="mb-3 mt-3 ">
+                                    <a href="https://business.ticketmaster.com.tr/ ">Biz Kimiz</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/qualitypolicies/DIGER/tr ">Kurum Politikamız
+                            </a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/visualmaterials/DIGER/tr ">Görsel Materyaller</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/contactus/DIGER/tr ">Bize Ulaşın</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.livenation.it/ ">Live Nation Entertainment</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-main-acordion-item ">
+                            <!-- !bizimle çalışın-->
+                            <h3 class="footer-main-acordion-header ">BİZİMLE ÇALIŞIN<span class="footer-main-toggle-btn"></span></h3>
+                            <hr class="footer-main-line-1 w-80 ">
+                            <ul class="footer-main-acordion-content  m-0 p-0 ">
+                                <li class="mb-3 mt-3 ">
+                                    <a href="https://business.ticketmaster.com.tr/ ">Etkinlik Biletleriniz</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/advertisewithus/DIGER/tr ">Reklam Verin
+                            </a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/career/DIGER/tr ">Kariyer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 acordion-item ">
+                            <!-- !UYGULAMALARIMIZ-->
+                            <h3 class="footer-main-acordion-header "> UYGULAMALARIMIZ <span class="footer-main-toggle-btn"></span>
+                            </h3>
+                            <hr class="footer-main-line-1 w-80 ">
+                            <ul class="d-flex footer-main-acordion-content  m-0 p-0  ">
+                                <li class="mb-3 ">
+                                    <a href="https://apps.apple.com/tr/app/biletix/id1181457295?ls=1 "><img src="./img/SVG/appleinc.svg" alt=""></a>
+                                </li>
+                                <li class="mb-3  ">
+                                    <a class=" ps-3" href="https://play.google.com/store/apps/details?id=com.biletix.ticketmaster "><img src="./img/SVG/android.svg" alt="">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-main-acordion-item ">
+                            <!-- !POLİTİKALAR & BİLDİRİMLER-->
+                            <h3 class="footer-main-acordion-header mb-2"> POLİTİKALAR & BİLDİRİMLER<span class="footer-main-toggle-btn"></span>
+                            </h3>
+                            <hr class="footer-main-line-1 w-80 ">
+                            <ul class="footer-main-acordion-content  m-0 p-0  ">
+                                <li class="mb-3 mt-3 ">
+                                    <a href="https://www.biletix.com/ourpolicies/DIGER/tr ">Sözleşme ve Politikalar</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://privacy.ticketmaster.com.tr/tr/cookie-policy ">Çerez Politikası
+                                </a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="# ">Tercihleri Yönet
+                                </a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://www.biletix.com/ttk/DIGER/tr ">TTK Bildirimleri
+                                </a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="https://privacy.ticketmaster.com.tr/tr/privacy-policy ">Gizlilik Politikası 
+                                </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- !bizi takip edin -->
+                <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 mt-3 footer-main-icon ">
+                    <h3 class="footer-main-acordion-header">BİZİ TAKİP EDİN</h3>
+                    <hr class="footer-main-line-2 w-100 ">
+                    <ul class="d-flex mt-3  m-0 p-0 ">
+                        <li>
+                            <a href="#"> <img src="./img/SVG/instagram.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a class=" ps-3" href="# "><img src="./img/SVG/facebook.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a class=" ps-3" href="# "><img src="./img/SVG/twitter.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a class=" ps-3" href="#"><img src="./img/SVG/blogger.svg" alt=""> </a>
+                        </li>
+                        <li>
+                            <a class=" ps-3" href="# "><img src="./img/SVG/youtube.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a class=" ps-3" href="# "><img src="./img/SVG/linkedin2.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a class=" ps-3" href="# "><img src="./img/SVG/spotify.svg" alt=""></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 mt-5 ">
+                    <p class="text-center footer-main-p mb-3 ">© 2018 Biletix Bilet Dağıtım Basım ve Tic. A.Ş. Tüm hakları saklıdır.</p>
+                    <p class="text-center footer-main-p mb-3 ">Bu web sitesinin kullanımı, ticari kullanımı engelleyen Kullanım Koşulları'na tabidir. Bu sayfayı geçtiğinizde bu koşulları kabul etmiş sayılırsınız.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- !footer-end -->
+    
+    <!-- !fontawesome-script -->
+    <script
+      src="https://kit.fontawesome.com/5dfa75166b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- !bootstrap-script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- !script-js -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+  
