@@ -225,7 +225,7 @@ if(sonuc){
 // ETKİNLİK-LİSTE-JS-END
 
 
-/* (footer) Hesabım-(Hesap Oluştur ) createaccount.html START*/
+/* (footer) Hesabım-(Hesap Oluştur ) createAccount.html START*/
  
   // tr tel no js start
   function TelephoneTr(){
@@ -249,7 +249,7 @@ if(sonuc){
 //modal box(1.checkbox'a basıldığında) start
 function ModalHesapOlustur(){
 var modalOlustur = document.getElementById("modalBoxForm");
-var checkBoxHesap = document.getElementById("defaultCheck1");
+var checkBoxHesap = document.getElementById("FirstCheckBox");
 var modalKapa = document.getElementsByClassName("modal-kapa")[0];
 var modalKapaİki = document.getElementsByClassName("modal-kapaiki")[0];
 // checkbox'a tıkladığında aç
@@ -260,7 +260,7 @@ if(checkBoxHesap){
 }
 //modal dışında bir yere tıkladığında kapan
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target == modalOlustur) {
       modalOlustur.style.display = "none";
   }
 };
@@ -281,10 +281,10 @@ ModalHesapOlustur();
 // disable checkbox için start
     function disableOkudumCheck(){
     let checkboxOkudum = document.getElementById('okudumAnladim');
-    let confirmButton = document.getElementById('confirmButton');
+    let onaylamaButonu = document.getElementById('onaylamaButonu');
 
-   if(confirmButton){
-      confirmButton.addEventListener('click', () => {
+   if(onaylamaButonu){
+    onaylamaButonu.addEventListener('click', () => {
 
       checkboxOkudum.disabled = false;
       checkboxOkudum.checked = true;
@@ -299,21 +299,21 @@ disableOkudumCheck();
 
 /*select'  -bize ulasin */ 
 function contactInfo(){
-const selectElement = document.getElementById("sec");
-const divElements = document.querySelectorAll(".ulas-info");
+const secili = document.getElementById("sec");
+const ulasInfo = document.querySelectorAll(".ulas-info");
 
 function update() {
-  const selectedOptionValue = selectElement.value;
-  divElements.forEach(div => {
-    if (div.id === selectedOptionValue + "Info") {
-      div.style.display = "block";
+  const seciliDeger = secili.value;
+  ulasInfo.forEach(sec => {
+    if (sec.id === seciliDeger + "Info") {
+      sec.style.display = "block";
     } else {
-      div.style.display = "none";
+      sec.style.display = "none";
     }
   });
 }
-  if (selectElement){
-  selectElement.addEventListener("click", update);
+  if (secili){
+  secili.addEventListener("click", update);
 }
 
 update();
