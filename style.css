@@ -346,6 +346,73 @@
 /* !NAVBAR-END */
 
 
+
+/*navbar-2 başlangıç*/
+
+/* ! Etkinlik Detay navbar ic */
+.navbar-ic
+{
+    width: 85%;
+    box-shadow: 5px 4px 10px gray;
+    display: none !important;
+}
+.card-navbar-ic
+{
+    width: 230px;
+    box-shadow: 3px 3px 7px rgb(233, 233, 233);
+}
+.navbar-ic .card-navbar-ic .card-body h5
+{
+    color:black ;
+}
+.link a i
+{
+    color:#026cdf;
+}
+.link
+{
+    top: 85%;
+    right: 0;
+}
+.link a:hover
+{
+    text-decoration: underline #026cdf !important;
+
+}
+.card-navbar-ic:hover
+{
+    box-shadow: 3px 3px 7px rgb(167, 166, 166);
+    border-bottom-left-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
+.detay-navbar-search 
+{
+ width: 300px;
+
+   
+}
+
+.detay-navbar-search form  input::placeholder
+{
+    font-size: 12px;
+    position:absolute;
+    top: 35%;
+    left: 10%;
+
+}
+.detay-navbar-search form img
+{
+    top: 35%;
+    left: 3%;
+}
+/* etkinlik detay navbar bitiş */
+/* !navbar-2 bitiş*/
+
+
+
+
+
+
 /* CAROUSEL START*/
 /* carousel  */
 
@@ -952,6 +1019,78 @@ p {
             }
         }
         /* !footerMain end */
+
+
+/*footer-2 başlangıç*/
+/* berke footer başlangıç */
+
+/* !FOOTER2 SAYFASI */
+.footer2-containerfluid{
+    background-color: #1f262d;
+    display: block;
+}
+.footer2-containerfluid a{
+    text-decoration: none;
+}
+.footer2-container p{
+    font-size: 12px !important;
+}
+.footer2-container{
+    width: 95% !important;
+}
+.footer2-politikalar{
+    border-right: 2px solid white !important;
+    font-size: 12px;
+}
+.footer2-politikalar2{
+    font-size: 12px !important;
+}
+.footer2-hr{
+    height: 3px;
+    background-color: white;
+}
+.footer2-icon{
+    width: 35% !important;
+}
+.footer2-dropdown{
+    background-color: #1f262d;
+    display: none;
+}
+.footer2-dropdown p{
+    font-size: 12px;
+}
+.footer2-accordion{
+    background-color: #1f262d;
+    display: none;
+}
+.footer2-accordion a{
+    text-decoration: none;
+}
+.footer2-accordion p{
+    font-size: 12px;
+}
+
+    /* !ACCORDİON YAPISI */
+    @media screen and (max-width:959px) {
+        .footer2-dropdown{
+            display: none;
+            
+        }
+        .footer2-accordion{
+            display: block;
+        }
+        .etkinlik-detay-signup 
+        {
+            display: none !important;
+        }
+        .etkinlik-detay-container-ic
+        {
+            width: 100% !important;
+        }
+    }
+/*footer-2 bitiş*/
+
+
 
 /*müzik html*/
 /* ! KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ */
@@ -2023,4 +2162,558 @@ font-family: Arial, Helvetica, sans-serif;
     }
 }
 /* ! ETKİNLİK KATILIM END */
+
+/* etkinlik detay start*/
+.navbar-shadow {
+  box-shadow: #90bff1 0 7px 9px !important;
+}
+@media screen and (max-width: 992px) {
+  .dropdown-none,
+  .hesabim-none {
+    display: none !important;
+  }
+}
+.bltx-detay-title h1
+{
+    font-size: 32px;
+}
+.button-paylas  button
+{
+    border:1px solid #bedaf5;
+}
+.button-paylas  button:hover
+{
+    border:1px solid #bedaf5;
+    background-color: white;
+    color: #046cdf;
+
+}
+.etkinlik-detaylari-menu-aktif{
+    font-weight:600;
+    color: #046cdf  !important;
+    border-bottom: 2px solid #046cdf;
+} 
+
+
+.description span
+{
+    font-size: 12px;
+    color: #4587e5;
+   
+}
+.date-box span:last-child
+{
+    font-size: 12px;
+}
+
+.description-2 span
+{
+    font-size: 12px;
+}
+.concert-ticket 
+{
+    border-left: 10px solid #ea4e3e;
+    border-top:1px  solid #ebebeb;
+    border-bottom:1px  solid #ebebeb;
+    border-right:1px  solid #ebebeb;
+}
+.ticket-list .line
+{
+    border-color:#ebebeb;
+    border-style: solid;
+    border-left: 5px;
+    height: 20px;
+    margin: 15px 20px 10px 20px;
+}
+
+.ticket-location-1 span:last-child
+{
+    background-color: #1daa1d;
+    font-size: 12px;
+
+}
+.explanation p
+{
+    font-size: 14px;
+}
+.etkinlik-kurallari p
+{
+    font-size: 14px;
+    
+}
+/* bilet sayfası */
+.etkinlik-saat .col-4 span:first-child
+{
+ font-size:14px ;
+ font-weight: 600;
+ line-height: 70%;
+}
+.etkinlik-saat .col-4 span:last-child
+{
+ font-size:11px ;
+ font-weight: 600;
+ color: #646464;
+ 
+}
+.tickets-about-explanation span:first-child
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626;
+}
+.tickets-about-explanation span:last-child
+{
+    font-size: 14px;
+}
+.ticket-category 
+{
+    background-color: #ecf4fd;
+}
+.ticket-category-ic select:disabled
+{
+    background-color: white !important;
+}
+.form-select
+{
+    color: #046cdf !important;
+}
+.ticket-price-start-content1 p
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+.ticket-price-start-content2 button
+{
+    border: #b9d5f5 1px solid !important;
+    font-weight:600;
+    font-size: 14px;
+
+}
+.ticket-price-start-content2 button:hover
+{
+    background-color: #f6f9ff !important;
+    color: #036ce0 !important;
+    border: #b9d5f5 1px solid !important;
+    font-weight:600;
+    font-size: 14px;
+
+}
+
+.ticket-price-start-container-text p
+{
+    line-height: 2%;
+    color: #646464;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+.standard-ticket-prices a
+{
+    font-size: 14px;
+    text-decoration: underline !important;
+    color: #046cdf;
+    font-weight: 600;
+}
+.standard-ticket-prices img
+{
+    width: 20px;
+    color: #046cdf !important;
+}
+.dots
+{
+    border-bottom: 10px dotted #fff;
+    width: 100%;
+    height: 30px;
+    background: url("/Users/elif/BiletX/img/bilet-bul-biletix-text.png") repeat-x;
+  
+}
+.biletix-manga-container .col-4
+{
+    position: sticky;
+    top: 10px;
+    height: 100%;
+}
+.ticket-find-container
+{
+    width: 90%;
+    box-shadow:-5px -10px 20px #c6c3c3 ;
+}
+.ticket-find-start-container
+{
+    
+    box-shadow: 2px 1px 10px #c6c3c3,
+     1px 1px 10px #c6c3c3 ,
+    0 1px 3px 0 #00001f ;
+}
+.ticket-find-card-header
+{
+    width: 100%;
+    height: 25px;
+    background:linear-gradient(98.6deg,#026CDF -23.51%,#7F6BF4 86.87%) ;
+}
+
+.ticket-find-card-content .bilet-img
+{
+    width: 30px;
+}
+.ticket-find-card-content span
+{
+    font-size: 14px;
+    font-weight: 600;
+}
+.ticket-find-card-content p
+{
+    font-size: 12px;
+    font-weight: 400;
+}
+.btn-bilet-bul 
+{
+    border:1px solid #b7d1eb !important;
+    color: #0367d6;
+    font-size: 16px;
+    font-weight: 600;
+    width: 90%;
+}
+.btn-bilet-bul:hover
+{
+    border:1px solid #b7d1eb !important;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 600;
+    color: #046cdf;
+
+}
+
+/* hoca ekledi */
+
+.dflex{
+    display: flex !important;
+}
+.dblock
+{
+    display: none !important;
+}
+
+/* bilet alım */
+.ticket-content-title h2
+{
+    font-size: 24px !important;
+    font-weight: 600;
+
+}
+.selected-shopping-item .shopping-item-1 span
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+.selected-shopping-item .shopping-item-2 span
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+.selected-shopping-item-content .selected-shopping-category-section .category-title 
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #646464;
+}
+.selected-shopping-item-content .selected-shopping-category-section .category-name
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+.selected-shopping-ticket-infos .ticket-infos1 .ticket-price-title
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #646464;
+}
+.selected-shopping-ticket-infos .ticket-infos1 .product-price 
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+.selected-shopping-ticket-infos .ticket-infos2 .service-fee-title
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #646464;
+}
+.selected-shopping-ticket-infos .ticket-infos2 .total-pirce
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+.selected-shopping-item-content
+{
+    
+    border-left: 3px solid #262626;
+}
+
+.selected-shopping-item-container .price-dots
+{
+    border-bottom: 8px dotted #EBEBEB;
+    width: 100%;
+    margin: 15px 0 !important;
+}
+.order-price .order-value-title
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+.order-price .order-price-extra
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+.total-amount-container .total-title
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.total-amount-container .total-price
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.legal-notice ul li
+{
+    
+    font-size: 12px;
+    font-weight: 400;
+    color: #646464;
+}
+
+/* paylaş manga biletileri */
+  #menuPaylas-detay {
+  display: none;
+  list-style: none;
+  padding: 0;
+  z-index: 1000000;
+  position: absolute;
+  top: 270px;
+  right: 10px;
+  box-shadow: 4px 3px 10px #646464;
+  background-color: #fff;
+  width: 15%;
+  height: 30%;
+  border-radius: 5px;
+}
+
+#menuPaylas-detay.paylas-active {
+  display: block;
+}
+
+.paylas-text {
+  color: #026CDF;
+}
+
+.paylas-icerik-detay {
+  border: 0px solid gray;
+  width: 100%;
+  background-color: #fff;
+  float: right;
+}
+
+.paylas-etiket-detay {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.paylas-etiket-detay a {
+  font-size: 14px;
+}
+
+#toggleBtn-1 {
+  background-color: white;
+  border-color: #BFDAF6;
+  float: right;
+}   
+
+
+/** navbar-responsive */
+
+@media screen and (max-width:1000px) {
+
+    /* navbar -1 */
+    .navbar-1 .inner .hide-navbar-1
+    {
+
+        /* navbar-1 içindeki ikinci ul classını kaybetmek için kullandım. */
+        display: none;
+
+    }
+    .button-paylas
+    {
+        display: none;
+    }
+    .navbar-responsive{
+        justify-content: space-evenly !important;
+    }
+    /* navbar içindeki link grubu */
+    .navbar-content ul:first-child{
+        display: none;
+    }
+    .navbar-content ul{
+        margin: 0 !important;
+    }
+    /* bar-menu görünür oluyor*/
+    .bar-menu{
+        display: block !important;
+    }
+    .header-ic
+    {
+        max-width: 2000px !important;
+    }
+  
+    /* detay navbar */
+    
+
+    .manga-img img
+    {
+        border-radius: 0% !important;
+        height: 400px;
+        width: 100% !important;
+        padding: 0px !important;
+      
+    
+    }
+
+    
+}
+@media screen and (max-width:991px){
+    .ticket-find-4 
+    {
+        border-radius: 0% !important;
+    }
+    .ticket-find-container
+    {
+        border-radius: 0% !important;
+        position: fixed !important;
+        bottom: 0px;
+        top: auto;
+        height: auto;
+        z-index: 9999 !important;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        overflow: auto;
+        width: 100% !important;
+    }
+    .ticket-find-start-container
+    {
+        background-color: white !important;
+        border-radius: 0% !important;
+    }
+    .ticket-find-card-header
+    {
+        border-radius: 0% !important;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    /* elemanlar arasında boşluk bırakmak için between kullandım */
+    .navbar-responsive{
+        justify-content: space-between !important;
+    }
+    /* responsive olmadan önceki search */
+    .navbar-search-item-1{
+        display: none !important;
+    }
+    /* responsive olduktan sonraki search */
+    .navbar-search-item-2{
+        display: block !important;
+    }
+
+    /* giriş yap yazısını kayboluyor */
+    .navbar-responsive span{
+        display: none !important;
+    }
+    /* search'ün genişliği tüm divi kaplıyor */
+    .navbar-search{
+        width: 100% !important;
+    }
+    /* kategoriyi gizlemek için kullandım */
+    .navbar-kategori{
+        display: none;
+    }
+   
+    .biletix-manga-container 
+    {
+        width: 100%;
+    }
+    
+    .manga-img img
+    {
+        border-radius: 0% !important;
+        height: 400px;
+        width: 100% !important;
+        padding: 0px !important;
+    
+    }
+ 
+}
+@media screen and (max-width:576px){
+
+    
+    .konser-detay .btn-detay-paylas
+    {
+        display: block !important;
+
+    }
+    .manga-img img
+    {
+        border-radius: 0% !important;
+        height: 200px;
+        width: 110% !important;
+        padding: 0px !important;
+    }
+  
+    .ticket-category .row select
+    {
+        margin-bottom: 15px;
+
+        
+    }
+    .organizasyon-reklam 
+    {
+       width: 100% !important;
+       border-bottom: none !important;
+    }
+    .tickets-about
+    {
+        border-bottom: none !important;
+    }
+    .ticket-price-start-container-text  p:last-child
+    {
+        line-height: 15px;
+    }
+  
+    
+}
+
+@media screen and (max-width:365px) {
+    .manga-img 
+    {
+        border-radius: 0% !important;
+        height: 200px;
+        padding: 0px !important;
+    }
+  
+    .ticket
+    {
+        width: 100% !important;
+    }
+    .tickets-about
+    {
+        width: 150% !important;
+    }
+    .etkinlik-kurallari
+    {
+        width: 150% !important;
+    }
+}
+/* Etkinlik detay css  bitiş*/
+
 
