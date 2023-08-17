@@ -321,3 +321,108 @@ update();
 contactInfo();
 
 //(footer-bize ulaşın-contactus) contactus.html END
+
+
+// ! ETKİNLİK DETAY  BAŞLANGIÇ
+
+
+// detay link 
+const clickableLink1 = document.getElementById('link1');
+const clickableLink2 = document.getElementById('link2');
+const clickableLink3 = document.getElementById('link3');
+const clickableLink4 = document.getElementById('link4');
+
+if (clickableLink1){
+    clickableLink1.addEventListener('click', function(){
+    clickableLink1.classList.add('etkinlik-detaylari-menu-aktif')
+    clickableLink2.classList.remove('etkinlik-detaylari-menu-aktif')
+    clickableLink3.classList.remove('etkinlik-detaylari-menu-aktif')
+    clickableLink4.classList.remove('etkinlik-detaylari-menu-aktif')
+});
+}
+if (clickableLink2)
+{
+    clickableLink2.addEventListener('click', function(){
+    clickableLink2.classList.add('etkinlik-detaylari-menu-aktif')
+    clickableLink1.classList.remove('etkinlik-detaylari-menu-aktif')
+    clickableLink3.classList.remove('etkinlik-detaylari-menu-aktif')
+    clickableLink4.classList.remove('etkinlik-detaylari-menu-aktif')
+});
+}
+if (clickableLink3)
+{
+    clickableLink3.addEventListener('click', function(){
+    clickableLink3.classList.add('etkinlik-detaylari-menu-aktif')
+    clickableLink1.classList.remove('etkinlik-detaylari-menu-aktif')
+    clickableLink2.classList.remove('etkinlik-detaylari-menu-aktif')
+    clickableLink4.classList.remove('etkinlik-detaylari-menu-aktif')
+    
+});
+}
+if (clickableLink4)
+{
+    clickableLink4.addEventListener('click', function(){
+    clickableLink4.classList.add('etkinlik-detaylari-menu-aktif')
+    clickableLink1.classList.remove('etkinlik-detaylari-menu-aktif')
+    clickableLink2.classList.remove('etkinlik-detaylari-menu-aktif')
+    clickableLink3.classList.remove('etkinlik-detaylari-menu-aktif')
+});
+}
+
+
+
+
+// bilet ücreti
+
+function updateSelects() {
+    var select1 = document.getElementById("select1");
+    var select2 = document.getElementById("select2");
+    var select3 = document.getElementById("select3");
+    var priceContent1=document.getElementById("ticket-price-content1");
+    var priceContent2=document.getElementById("ticket-price-content2");
+    var priceContent3=document.getElementById("ticket-price-content3");
+    if (select1.value === "1") {
+        select2.disabled = false;
+        select2.selectedIndex = 1;
+        select3.disabled = false;
+        select3.selectedIndex = 1;
+        priceContent1.style.display="none";
+        priceContent2.classList.add('dflex');
+        priceContent3.classList.remove('dflex');
+        optionFirstic.classList.add('dblock');
+        
+       
+    } 
+    else if (select1.value === "2") {
+        select2.disabled = false;
+        select2.selectedIndex = 1;
+        select3.disabled = false;
+        select3.selectedIndex = 2;
+        priceContent1.style.display="none";
+        priceContent2.classList.remove('dflex');
+        priceContent3.classList.add('dflex');
+
+        if(select3.selectedIndex===2)
+        {
+            console.log("tm")
+            select3.selectedIndex[1].hide();
+        }
+    }
+    
+}
+
+
+// Sayfa yüklendiğinde veya güncellendiğinde seçimleri kontrol etmek için
+window.onload = updateSelects;
+
+  
+const toggleBtnPaylas = document.getElementById("toggleBtn-1");
+const menuPaylas = document.getElementById("menuPaylas-detay");
+if(toggleBtnPaylas)
+{
+    toggleBtnPaylas.addEventListener("click", () => {
+    menuPaylas.classList.toggle("paylas-active");
+});
+
+}
+// ! ETKİNLİK DETAY  BİTİŞ
