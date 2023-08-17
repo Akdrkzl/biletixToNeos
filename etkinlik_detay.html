@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga</title>
+            <!-- ! bootstrap-link -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+            <!-- ! external css -->
+            <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <!-- üst-div -->
+        <div
+          class="d-none d-lg-flex"
+          style="height: 30px; background-color: #0150a7"
+        >
+          <div
+            class="container-fluid container-lg d-flex justify-content-between h-100"
+          >
+            <ul class="d-flex align-items-center m-0 p-0 h-100">
+              <div class="me-3">
+                <ul class="link-grubu navbar-nav me-5 mb-2 mb-lg-0 ">
+                <!-- dropdown menu -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dil:
+                  <img src="./img/tr.svg" alt="">
+                  TR
+  
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+  
+              </div>
+              <div class="">
+                <a id="tum-tr" class="text-light" href="#">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  Tüm Türkiye
+                </a>
+              </div>
+            </ul>
+            <ul class="ust-nav-items d-flex align-items-center m-0 p-0 h-100">
+              <div class="me-3">
+                <a class="text-light" href="#">
+                  <i class="fa-solid fa-gift"></i>
+                  Hediye Kartı
+                </a>
+              </div>
+              <div class="me-3">
+                <a
+                  class="text-light"
+                  href="https://www.flipsnack.com/885A97FF8D6/"
+                  >Aylık Dergi</a
+                >
+              </div>
+              <div class="me-3">
+                <a class="text-light" href="https://blog.biletix.com/">Blog</a>
+              </div>
+              <div class="me-3">
+                <a class="text-light" href="#">Yardım</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-shadow">
+          <div
+            class="d-flex justify-content-lg-start container-fluid container-lg align-items-center"
+          >
+            <!-- logo ve bar-menu -->
+            <div class="d-flex align-items-center navbar-logo">
+              <i
+                class="fa-solid fa-bars fs-2 me-3 d-lg-none bar-menu"
+                style="color: #ffffff"
+              ></i>
+              <a href="index.html" class="navbar-brand" href="#">
+                <img src="./img/btx-logo.svg" alt="" />
+              </a>
+            </div>
+            <!-- link-grup-search-girişyap-sepet -->
+            <div class="d-flex align-items-center navbar-content">
+              <!-- link-grubu -->
+              <ul
+                class="link-grubu navbar-nav me-5 mb-2 mb-lg-0 d-none d-xl-flex"
+              >
+                <li class="nav-item px-2">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-bir"
+                    onclick="linkMenu(this)"
+                    >Müzik</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-iki"
+                    onclick="linkMenu(this)"
+                    >Sahne</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-uc"
+                    onclick="linkMenu(this)"
+                    >Spor</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-dort"
+                    onclick="linkMenu(this)"
+                    >Aile</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    class="nav-link active text-white link-grup"
+                    href="#"
+                    data-target="link-detay-bes"
+                    onclick="linkMenu(this)"
+                    >Eğitim&Fazlası</a
+                  >
+                </li>
+              </ul>
+              <!-- drop-down -->
+              <ul
+                class="link-grubu navbar-nav me-5 mb-2 mb-lg-0 d-xl-none dropdown-none"
+              >
+                <!-- dropdown menu -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light fw-bold"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Kategoriler
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- search ve giriş-yap-hesabım-sepet -->
+              <ul class="navbar-nav d-flex align-items-center">
+                <!-- search -->
+                <li
+                  class="nav-item detay-navbar-search mt-2 justify-content-center d-none d-lg-flex"
+                >
+                  <form
+                    class="position-relative m-auto align-items-center"
+                    role="search"
+                  >
+                    <img
+                      src="img/SVG icons/search.svg"
+                      class="position-absolute"
+                      alt=""
+                    />
+                    <input
+                      class="form-control me-2 rounded-5"
+                      type="search"
+                      placeholder="Etkinlik,sanatçı ya da mekan arayın"
+                      aria-label="Search"
+                    />
+                  </form>
+                </li>
+                <!-- profil -->
+                <li class="nav-item navbar-ic-login-1 ms-4 me-3">
+                  <a href="#">
+                    <img src="./img/SVG icons/user-circle-o.svg" class="" alt="" />
+                  </a>
+                </li>
+                <!-- hesabım-girişyap -->
+                <li class="nav-item navbar-ic-login-2 me-lg-4">
+                  <a href="#" class="text-white d-block p-0 m-0 hesabim-none"
+                    >Hesabım
+                    <img src="img/SVG icons/cheveron-down.svg" alt="" />
+                  </a>
+                  <a href="#" class="text-white d-block p-0 m-0 hesabim-none"
+                    >Giriş Yap/Üye Ol</a
+                  >
+                </li>
+                <!-- sepet -->
+                <li class="nav-item navbar-shopping">
+                  <a href="#" class="position-relative">
+                    <img src="./img/SVG icons/sepet.svg" alt="" />
+                    <span
+                      style="left: 13px; bottom: 10px; width: 20px; height: 20px"
+                      class="position-absolute text-light bg-danger text-center rounded-5"
+                      >0</span
+                    >
+                  </a>
+                  <a href="#" class="d-inline-block text-white hesabim-none">
+                    Sepetim
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- search-2 -->
+          <li
+            class="nav-item detay-navbar-search mt-2 justify-content-center w-100 d-lg-none"
+          >
+            <form
+              class="position-relative m-auto align-items-center"
+              role="search"
+            >
+              <img
+                src="img/SVG icons/search.svg"
+                class="position-absolute"
+                alt=""
+              />
+              <input
+                class="form-control me-2 rounded-5"
+                type="search"
+                placeholder="Etkinlik,sanatçı ya da mekan arayın"
+                aria-label="Search"
+              />
+            </form>
+          </li>
+        </nav>
+            <!--* Hamburger-Menu-Nav  -->
+      <div
+      class="hamburger-menu position-fixed top-0 start-0 overflow-y-auto h-100"
+      id="accordionMenu"
+    >
+      <div class="container-md h-100 m-0 p-0">
+        <div>
+          <i id="ok" class="fa-solid fa-arrow-left ok text-start"></i>
+          <h6 class="text-center">Menu</h6>
+        </div>
+        <div class="hamburger-link d-flex flex-column justify-content-between">
+          <ul
+            class="accordion accordion-flush m-0 p-2"
+            id="accordionFlushExample"
+          >
+            <li class="accordion-item">
+              <h2 class="accordion-header border-bottom">
+                <button
+                  class="accordion-button hamburger-accordion-button collapsed fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Müzik
+                </button>
+              </h2>
+              <span class="arrow-icon"></span>
+              <ul
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="muzik.html"
+                    >Tüm Müzik Etkinlikleri</a
+                  >
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Pop</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Rock</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Jazz</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Klasik</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Alternatif</a>
+                </li>
+              </ul>
+            </li>
+            <li class="accordion-item">
+              <h2 class="accordion-header border-bottom">
+                <button
+                  class="accordion-button hamburger-accordion-button collapsed fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Sahne
+                </button>
+              </h2>
+              <span class="arrow-icon"></span>
+              <ul
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Tüm Sahne Etkinlikleri</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Tiyatro</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Gösteri</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Bale-Dans</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Stand-Up</a>
+                </li>
+              </ul>
+            </li>
+            <li class="accordion-item">
+              <h2 class="accordion-header border-bottom">
+                <button
+                  class="accordion-button hamburger-accordion-button collapsed fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Spor
+                </button>
+              </h2>
+              <span class="arrow-icon"></span>
+              <ul
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Tüm Spor Etkinlikleri</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Futbol</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Basketbol</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Motor Sporları</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Voleybol</a>
+                </li>
+              </ul>
+            </li>
+            <li class="accordion-item">
+              <h2 class="accordion-header border-bottom">
+                <button
+                  class="accordion-button hamburger-accordion-button collapsed fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Aile
+                </button>
+              </h2>
+              <span class="arrow-icon"></span>
+              <ul
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Tüm Aile Etkinlikleri</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Gösteri</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Sirk</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Tiyatro</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Müzikli Gösteri</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Zoo</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Theme-Park</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Attraction Center</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Aile ve Çocuk</a>
+                </li>
+              </ul>
+            </li>
+            <li class="accordion-item">
+              <h2 class="accordion-header border-bottom">
+                <button
+                  class="accordion-button hamburger-accordion-button collapsed fw-semibold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  Eğitim & Fazlası
+                </button>
+              </h2>
+              <span class="arrow-icon"></span>
+              <ul
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Eğitim ve Fazlası</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Aile ve Çocuk</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Kulüp</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Tiyatrolar</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Müze</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Seyretix</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Komedi</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Rap-Hiphop</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Açıkhava</a>
+                </li>
+                <li class="p-2 border-bottom">
+                  <a class="fw-semibold" href="#">Festival Zamanı</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="m-0 p-0" style="background: #f6f7f9">
+            <li class="p-3 border-bottom">
+              <a class="fw-normal" href="#">Hediye Kartı</a>
+            </li>
+            <li class="p-3 border-bottom">
+              <a class="fw-normal" href="#">Aylık Dergi</a>
+            </li>
+            <li class="p-3 border-bottom">
+              <a class="fw-normal" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </header>
+
+    <div class="container-lg container-fluid">
+        <nav aria-label="breadcrumb" class=" mt-3">
+            <ol class="breadcrumb">
+              <li class="breadcrumb"><a href="#" class="text-secondary pe-2">MÜZİK</a><img src="./img/SVG icons/chevron-thin-right.svg"  class="pe-2" alt=""></li>
+              <li class="breadcrumb"><a href="#" class="text-secondary pe-2">Rock</a><img src="./img/SVG icons/chevron-thin-right.svg"  class="pe-2" alt=""></li>
+              <li class="breadcrumb"><a href="#" class="text-secondary">maNga Etkinlikleri</a></li>
+            </ol>
+          </nav>
+          
+          <div class="bltx-detay-title">
+            <h1>maNga</h1>
+          </div>
+
+
+          <div class="konser-detay d-flex justify-content-between">
+                <div class="btn-detay-paylas d-flex">
+                        <div class="description me-5">
+                            <a href="#">
+                                <img src="./img/SVG icons/location-pin.svg" alt="">
+                                <span>Selçuklu Kongre Merkezi Açıkhava Sahnesi,...</span>
+                            </a>
+                        </div>
+                        <div class="description-2">
+                                <img src="./img/SVG icons/calendar-o.svg" class="me-1" alt="">
+                                <span class="me-1">29 Eyl 2023</span>
+                                <img src="./img/SVG icons/clock.svg" class="me-1" alt="">
+                                <span class="me-1">19:30</span>
+                                <img src="./img/SVG icons/calendar-o.svg" class="me-1" alt="">
+                              
+                        </div>
+            
+                </div>
+
+                <div class="button-paylas">
+                    <button type="button" class="btn btn-outline-primary mb-2">
+                        <img src="./img/SVG icons/share.svg" alt="">
+                        <span>Paylaş</span>
+                    </button>
+                    <div class="paylas-icerik-detay">
+                        <ul id="menuPaylas-detay">
+                            <li><p style="color: rgba(0, 0, 0, 0.3); padding: 8px; margin: 5px;">Etkinliği Paylaş</p></li>
+                            
+                            <li class="mb-2">
+                                <a href="#" class="paylas-etiket-detay ps-2">
+                                        <i class="fa-brands fa-whatsapp" style="color: white; border-radius: 100%; background-color: #17de2e; padding: 8px; margin: 5px;"></i> WhatsApp
+                                </a>
+                            </li>
+    
+                            <li class="mb-2">
+                                <a href="#" class="paylas-etiket-detay ps-2">
+                                    <i class="fa-regular fa-envelope" style="color: white; border-radius: 100%; background-color: #0d1117; padding: 8px; margin: 5px;"></i> E-posta
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="paylas-etiket-detay ps-2">
+                                    <i class="fa-solid fa-link" style="color: white; border-radius: 100%; background-color: #2668d9; padding: 8px; margin: 5px; "></i> Bağlantıyı Kopyala
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div> 
+                </div>
+          </div>
+        
+          
+
+          <div class="d-flex manga-img justify-content-center ">
+            <img src="./img/mangaaa.png" class="w-100 rounded-3"  alt="">
+          </div>
+
+          <div class="etkinlik-detaylari-menu pt-5 border-bottom pb-3">
+            <a href="#etkinlige-dair" id="link1" class="text-secondary pb-3 pe-3 ">Etkinliğe Dair</a>
+            <a href="#etkinlik-title" id="link2" class="text-secondary pb-3 pe-3 ">Etkinlikleri Listele</a>
+            <a href="#etkinlik-kural" id="link3" class="text-secondary pb-3">Etkinlik Kuralları</a>
+           </div>
+
+          <div id="etkinlige-dair" class="etkinlige-dair-title">
+            <h2 class=" mt-4">Etkinliğe Dair</h2>
+          </div>
+          <section class="mt-5">
+            <div class="container-lg container-fluid">
+                <div class="row">
+                  <div class="col-8 etkinlik-detay-container-ic">
+                   <div class="explanation">
+                    <p>maNga, 7 Ağustos günü Şek Yapım organizasyonuyla Altın Güvercin Amfi Tiyatro  Kuşadası Sahnesi'nde sevenleriyle buluşuyor.</p>
+                   </div>
+                   <div class="organizasyon-reklam border-bottom ">
+                    <img src="./img/sek-organizasyon.png" class="w-100 mt-3 pb-3" alt="">
+                   </div>
+                   <div id="etkinlik-title" class="etkinlik-listele">
+                    <h3 class="mt-5">Etkinlikleri Listele</h3>
+                   </div>
+                   <div class="concert-ticket  rounded-3 p-2 mt-5 mb-5 position-relative">
+                    <a href="etkinlik-bilet.html" class="ticket-detail">
+                        <div class="ticket-list d-flex">
+                            <div class="date-box ms-3">
+                                <span class="fw-bold ms-2 text-black">29</span>
+                                <span class="d-block text-black">Eylül</span>
+                            </div>
+                            <div class="line">
+                            </div>
+                            <div class="ticket-location">
+                                <div class="ticket-location-1">
+                                    <img src="./img/SVG icons/clock.svg" alt="">
+                                    <span class="text-black fw-bold">19:30</span>
+                                    <span class=" rounded-4 pt-1 pb-1 pe-3 ps-3 text-white fw-bold">Satışta</span>
+                                </div>
+                                <div class="ticket-location-2">
+                                    <span class="text-black"> Selçuklu Kongre Merkezi Açıkhava Sahnesi </span>
+                                </div>
+                               
+                            </div>
+                             <div class="ticket-icon position-absolute end-0 me-2 mt-2">
+                                <img src="./img/SVG icons/chevron-right-solid.svg" alt="">
+                            </div>
+                        </div>
+                       
+                    </a>
+                   </div>
+                   <section id="etkinlik-kural" class="etkinlik-kurallari">
+                    <h3 class="mb-4">Etkinlik Kuralları</h3>
+                    <p>- Etkinlik 6 yaş ve üstü katılımcılar için uygundur.</p>
+                    <p>- Etkinlik başlangıç saatinden en az 1 saat önce biletle birlikte etkinliğin kapısında olacak şekilde hazır olunması gerekmektedir.</p>
+                    <p>- Misafirlerin belirtilen oturma düzenine uyması zorunludur. Etkinlik boyunca belirlenen koltuklarda oturulması gerekmektedir.</p>
+                    <p>- Organizatör, indirimli bilet satın alma koşullarında değişiklik yapma hakkını saklı tutar.</p>
+                    <p>- Organizatör, etkinlik alanı ve saatinde değişiklik yapma hakkına sahiptir.</p>
+                    <p>- Organizatör, etkinlik için uygun görmediği kişileri, bilet ücretini iade ederek etkinlik mekanına almama hakkına sahiptir.</p>
+                    <p>- Etkinlik mekanına yiyecek ve içecek sokmak yasaktır.</p>
+                    <p>- Etkinlik mekanına kamera ve fotoğraf makinası sokmak yasaktır.</p>
+                   </section>
+                 
+                  </div>
+                  <div class="col-4 etkinlik-detay-signup text-center">
+                        <a href="#">
+                            <img src="./img/signup.png" class="p-4 border rounded-4" alt="">
+                        </a>
+
+                  </div>
+                  
+                </div>
+              </div>
+          </section>
+    </div>
+ 
+
+<!-- footer-2 baş  -->
+<footer class="container-fluid footer2-containerfluid">
+    <div class="container-fluid footer2-container">
+        <div class="row">
+            <div class="col-4 mt-5">
+                <img class="footer-icon mb-5" src="img/footer-logo.svg" alt="">
+                <h5 class="text-white mt-3 mb-3">Bizi Takip Edin</h5>
+            
+            <a href="" class="me-3  fs-4"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="" class="me-3  fs-4"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+            <a href="" class="me-3  fs-4"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+            <a href="" class="me-3  fs-4"> <i class="fa-solid fa-blog" style="color: #ffffff;"></i>
+            <a href="" class="me-3  fs-4"> <i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+            <a href="" class="me-3  fs-4"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+            <a href="" class="me-3  fs-4"> <i class="fa-brands fa-spotify" style="color: #ffffff;"></i></a>
+    
+            <h5 class="text-white mt-3 mb-4 mt-5">Uygulamalarımız</h5>
+            <img class="footer2-icon mb-5" src="img/app-store.svg" alt="">
+            <img class="footer2-icon mb-5" src="img/play-store.svg" alt="">
+            </div>
+            <div class="col-8">
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <h5 class="mb-4 text-white mx-4"> Hakkımızda </h5>
+                         <ul>
+                             <li class="mt-3">
+                                 <a  class="text-white" href="">
+                                     Biz Kimiz
+                                    </a>
+                             </li>
+                             <li class="mt-3">
+                                 <a class="text-white" href="">
+                                     Kurum Politikamız
+                                    </a>
+                             </li>
+                             <li class="mt-3">
+                                 <a class="text-white" href="">
+                                     Görsel Materyaller
+                                    </a>
+                             </li>
+                             <li class="mt-3">
+                                 <a class="text-white" href="">
+                                     Bize Ulaşın
+                                    </a>
+                             </li>
+                             <li class="mt-3">
+                                 <a class="text-white" href="">
+                                     Live Nation Entertainment
+                                    </a>
+                             </li>
+                             </ul>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="mb-4 text-white mx-4">Yardım Edelim</h5>
+                                <ul>
+                                    <li class="mt-3">
+                                        <a class="text-white" href="">
+                                            Yardım/SSS
+                                        </a>
+                                    </li>
+                                    <li class="mt-3">
+                                        <a class="text-white" href="">
+                                            Satış Kanalları
+                                        </a>  
+                                    </li>
+                                    <li class="mt-3">
+                                        <a class="text-white" href="">
+                                            Hesabım
+                                        </a>
+                                    </li>
+                                    <li class="mt-3">
+                                        <a class="text-white" href="">
+                                            Hediye Kart
+                                        </a>
+                                    </li>
+                                    <li class="mt-3">
+                                        <a class="text-white" href="">
+                                            Etkinlik Katılım Sigortası
+                                        </a>                            
+                                    </li>
+                                    
+                                </ul>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="mb-4 text-white mx-4">Bizimle Çalışın</h5>
+                        <ul>
+                            <li class="mt-3">
+                                <a class="text-white" href="">
+                                    Etkinlik Biletleriniz
+                                </a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white" href="">
+                                    Reklam Verin
+                                </a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white" href="">
+                                    Affiliate Programı
+                                </a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white" href="">
+                                    Kariyer
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <hr class=" footer2-hr ">
+                <div class="col-6 ">
+                    <a class="footer2-politikalar text-white px-2" href="">TTK Bildirimleri</a>
+                    <a class="footer2-politikalar text-white px-2 pe-3" href="">Gizlilik Politikası</a>
+                    <a class="footer2-politikalar text-white px-2 pe-3" href="">Çerez Politikası</a>
+                    <a class="footer2-politikalar text-white px-2 pe-3" href="">Tercihleri Yönet</a>
+                    <a class="footer2-politikalar2 text-white px-2 pe-3" href="">Sözleşme ve Politikalar</a>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <p class="text-white">© 2022 Biletix Bilet Dağıtım Basım ve Tic. A.Ş. Tüm hakları saklıdır.</p>
+                </div>
+                <p class="text-white text-center mt-3">Bu internet sitesinin kullanımı, ticari kullanımı engelleyen Kullanım Koşulları'na tabidir. Bu sayfayı geçtiğinizde bu koşulları kabul etmiş sayılırsınız.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+   <!-- !Dropdown -->
+<footer class="container-fluid footer2-dropdown">
+    <div class="row">
+        <div class="col-4 mt-5">
+            <img class="footer-icon " src="img/footer-logo.svg" alt="">
+            <h5 class="text-white mt-5 mb-3">Bizi Takip Edin</h5>
+        
+        <a href="" class="me-3  fs-4"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        <a href="" class="me-3  fs-4"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        <a href="" class="me-3  fs-4"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+        <a href="" class="me-3  fs-4"> <i class="fa-solid fa-blog" style="color: #ffffff;"></i>
+        <a href="" class="me-3  fs-4"> <i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+        <a href="" class="me-3  fs-4"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+        <a href="" class="me-3  fs-4"> <i class="fa-brands fa-spotify" style="color: #ffffff;"></i></a>
+
+        <h5 class="text-white mt-3 mb-4 mt-5">Uygulamalarımız</h5>
+        <img class="footer-icon mb-5" src="img/app-store.svg" alt="">
+        <img class="footer-icon mb-5" src="img/play-store.svg" alt="">
+        </div>
+        <div class="col-8 mt-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="dropdown">
+                        <button class="btn bg-transparent text-white dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hakkımızda
+                        </button>
+                        <ul class="dropdown-menu bg-transparent border-0">
+                        <li><a class="dropdown-item text-white" href="#">Biz Kimiz</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Kurum Politikamız</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Görsel Materyaller</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Bize Ulaşın</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Live Nation Entertainment</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="dropdown">
+                        <button class="btn bg-transparent text-white dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Yardım Edelim
+                        </button>
+                        <ul class="dropdown-menu bg-transparent border-0">
+                        <li><a class="dropdown-item text-white" href="#">Yardım/SSS</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Satış Kanalları</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Hesabım</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Hediye Kart</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Etkinlik Katılım Sigortası</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="dropdown">
+                        <button class="btn bg-transparent text-white dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Bizimle Çalışın
+                        </button>
+                        <ul class="dropdown-menu bg-transparent border-0">
+                        <li><a class="dropdown-item text-white" href="#">Etkinlik Biletlerimiz</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Reklam Verin</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Hesabım</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Affiliate Programı</a></li>
+                        <li><a class="dropdown-item text-white" href="#">Kariyer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion accordion-flush border-bottom" id="accordionFlushExample">
+
+        <div class="accordion-item bg-transparent border-white mt-2">
+        <h2 class="accordion-header text-white">
+            <button class="accordion-button bg-transparent collapsed border-white shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Politikalar & Bildirimler
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+                    <li>
+                        <a class="text-white text-decoration-none " href="">TTK Bildirimler</a>
+                    </li>
+                    <li>
+                        <a class="text-white text-decoration-none " href="">Gizlilik Politikası</a>
+                    </li>
+                    <li>
+                        <a class="text-white text-decoration-none " href="">Çerez Politikası</a>
+                    </li>
+                    <li>
+                        <a class="text-white text-decoration-none " href="">Tercihleri Yönet</a>
+                    </li>
+                    <li>
+                        <a class="text-white text-decoration-none " href="">Sözleşme ve Politikalar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <p class="text-white text-center mt-3">© 2022 Biletix Bilet Dağıtım Basım ve Tic. A.Ş. Tüm hakları saklıdır.</p>
+    <p class="text-white text-center mt-3">Bu internet sitesinin kullanımı, ticari kullanımı engelleyen Kullanım Koşulları'na tabidir. Bu sayfayı geçtiğinizde bu koşulları kabul etmiş sayılırsınız.</p>
+</footer>
+
+<!-- ! ACCORDİON -->
+<footer class="container-fluid footer2-accordion">
+
+    <div class="col-12">
+        <img class="footer-icon w-25 mt-4 mb-3" src="img/footer-logo.svg" alt="">
+        <h5 class="text-white mt-4 mb-3">Bizi Takip Edin</h5>
+    
+    <a href="" class="me-3  fs-4"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+    <a href="" class="me-3  fs-4"> <i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+    <a href="" class="me-3  fs-4"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+    <a href="" class="me-3  fs-4"> <i class="fa-solid fa-blog" style="color: #ffffff;"></i>
+    <a href="" class="me-3  fs-4"> <i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+    <a href="" class="me-3  fs-4"> <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+    <a href="" class="me-3  fs-4"> <i class="fa-brands fa-spotify" style="color: #ffffff;"></i></a>
+
+    <h5 class="text-white mt-3 mb-4 mt-5">Uygulamalarımız</h5>
+    <img class=" mb-3" src="img/app-store.svg" alt="">
+    <img class=" mb-3" src="img/play-store.svg" alt="">
+    </div>
+
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <div class="accordion-item bg-transparent border-white mt-2">
+        <h2 class="accordion-header">
+            <button class="accordion-button bg-transparent collapsed shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Hakkımızda
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+    
+                <ul>
+                    <li>
+                        <a  class="text-white" href="">
+                            Biz Kimiz
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Kurum Politikamız
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Görsel Materyaller
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Bize Ulaşın
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Live Nation Entertainment
+                        </a>
+                    </li>
+                    </ul>
+    
+            </div>
+        </div>
+        </div>
+
+        <div class="accordion-item bg-transparent border-white mt-2">
+        <h2 class="accordion-header">
+            <button class="accordion-button bg-transparent collapsed shadow-none bg-white text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo " aria-expanded="false" aria-controls="flush-collapseTwo">
+                Yardım Edelim
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+    
+                <ul>
+                    <li >
+                        <a class="text-white" href="">
+                            Yardım/SSS
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Satış Kanalları
+                        </a>  
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Hesabım
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Hediye Kart
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Etkinlik Katılım Sigortası
+                        </a>                            
+                    </li>
+                    
+                </ul>
+    
+            </div>
+        </div>
+        </div>
+
+        <div class="accordion-item bg-transparent border-white mt-2">
+        <h2 class="accordion-header">
+            <button class="accordion-button bg-transparent collapsed shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Bizimle Çalışın
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+                    <li>
+                        <a class="text-white" href="">
+                            Etkinlik Biletleriniz
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Reklam Verin
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Affiliate Programı
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Kariyer
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        </div>
+    
+        <div class="accordion-item bg-transparent border-white mt-2">
+            <h2 class="accordion-header">
+            <button class="accordion-button bg-transparent collapsed shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Politikalar & Bildirimler
+            </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+                    <li>
+                        <a class="text-white" href="">
+                            TTK Bildirimleri
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Gizlilik Politikası
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Çerez Politikası
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="">
+                            Tercihleri Yönet
+                        </a>
+                    </li>
+                    <li>
+                    <a class="text-white" href="">
+                        Sözleşme ve Politiklar
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-white text-center">© 2022 Biletix Bilet Dağıtım Basım ve Tic. A.Ş. Tüm hakları saklıdır.</p>
+    <p class="text-white text-center mt-3 pb-3">Bu internet sitesinin kullanımı, ticari kullanımı engelleyen Kullanım Koşulları'na tabidir. Bu sayfayı geçtiğinizde bu koşulları kabul etmiş sayılırsınız.</p>
+</footer>
+
+<!-- footer-2 bitiş  -->
+
+
+
+
+
+
+
+
+
+
+           <!-- !fontawesome-script -->
+     <script
+     src="https://kit.fontawesome.com/5dfa75166b.js"
+     crossorigin="anonymous">
+    </script>
+
+   <!-- !bootstrap-script -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   <!-- !script-js -->
+   <script src="script/script.js"></script>
+</body>
+</html>
