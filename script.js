@@ -213,14 +213,22 @@ gosterGizleMuzik()
 
 //  KATEGROİLER VE ETKİNLİK TARİHLERİ BAŞLANGIÇ
 
+// ETKİNLİK-LİSTE-JS-START
+const sonuc = document.querySelector('#sonuc')
+const divGoster = document.querySelector('.scriptgenel')
+if(sonuc){
+    sonuc.addEventListener('click', function(){
+        divGoster.classList.toggle('scriptgenelactive')
+    })
+}
+
+// ETKİNLİK-LİSTE-JS-END
 
 
-
-
-
-/* (footer) Hesabım-(Hesap Oluştur ) createAccount.html START (hesabım sayfasının içinde bulunan sayfa) */
+/* (footer) Hesabım-(Hesap Oluştur ) createaccount.html START*/
  
-  // tr tel no js 
+  // tr tel no js start
+  function TelephoneTr(){
   let telephone= document.getElementById("country-select")
   if(telephone){
     telephone.addEventListener("change", function() {
@@ -234,56 +242,63 @@ gosterGizleMuzik()
       }
   });
   }
+  }
+  TelephoneTr();
+//tr tel no js end
 
-//modal box(1.checkbox'a basıldığında)
-
-var modal = document.getElementById("modalBoxForm");
-
-var checkBox = document.getElementById("defaultCheck1");
+//modal box(1.checkbox'a basıldığında) start
+function ModalHesapOlustur(){
+var modalOlustur = document.getElementById("modalBoxForm");
+var checkBoxHesap = document.getElementById("defaultCheck1");
 var modalKapa = document.getElementsByClassName("modal-kapa")[0];
 var modalKapaİki = document.getElementsByClassName("modal-kapaiki")[0];
-
-
 // checkbox'a tıkladığında aç
-if(checkBox){
-checkBox.onclick = function() {
-  modal.style.display = "block";
+if(checkBoxHesap){
+  checkBoxHesap.onclick = function() {
+  modalOlustur.style.display = "block";
+};
 }
-}
-
-
 //modal dışında bir yere tıkladığında kapan
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+    if (event.target == modal) {
+      modalOlustur.style.display = "none";
   }
-}
-//okudum anladım ve onaylamadan çık'a basınca kapan
+};
+//okudum anladım ve onaylamadan çık'a basınca kapan 
 if(modalKapa){
-modalKapa.onclick = function() {
-  modal.style.display = "none";
-}
+  modalKapa.onclick = function() {
+  modalOlustur.style.display = "none";
+};
 }
 if(modalKapaİki){
-modalKapaİki.onclick = function() {
-  modal.style.display = "none";
-}}
-    // disable checkbox için
-    let checkbox = document.getElementById('okudumAnladim');
+  modalKapaİki.onclick = function() {
+  modalOlustur.style.display = "none";
+};
+}
+}
+ModalHesapOlustur();
+  ////modal box(1.checkbox'a basıldığında) end
+// disable checkbox için start
+    function disableOkudumCheck(){
+    let checkboxOkudum = document.getElementById('okudumAnladim');
     let confirmButton = document.getElementById('confirmButton');
 
    if(confirmButton){
-    confirmButton.addEventListener('click', () => {
+      confirmButton.addEventListener('click', () => {
 
-      checkbox.disabled = false;
-      checkbox.checked = true;
+      checkboxOkudum.disabled = false;
+      checkboxOkudum.checked = true;
     });
   }
+}
+disableOkudumCheck();
+// disable checkbox için end
 /* (footer) Hesabım-account-(Hesap Oluştur ) createaccount.html  (hesabım sayfasının içinde bulunan sayfa) END  */
 
-// (footer-bize ulaşın-contactus) START
+// (footer-bize ulaşın-contactus) contactus.html START
 
 /*select'  -bize ulasin */ 
+function contactInfo(){
 const selectElement = document.getElementById("sec");
 const divElements = document.querySelectorAll(".ulas-info");
 
@@ -297,22 +312,12 @@ function update() {
     }
   });
 }
-if (selectElement){
+  if (selectElement){
   selectElement.addEventListener("click", update);
 }
 
 update();
-
-//(footer-bize ulaşın-contactus) END
-
-
-// ETKİNLİK-LİSTE-JS-START
-const sonuc = document.querySelector('#sonuc')
-const divGoster = document.querySelector('.scriptgenel')
-if(sonuc){
-    sonuc.addEventListener('click', function(){
-        divGoster.classList.toggle('scriptgenelactive')
-    })
 }
+contactInfo();
 
-// ETKİNLİK-LİSTE-JS-END
+//(footer-bize ulaşın-contactus) contactus.html END
