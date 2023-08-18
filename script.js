@@ -426,3 +426,24 @@ if(toggleBtnPaylas)
 
 }
 // ! ETKİNLİK DETAY  BİTİŞ
+
+// SÖZLEŞME  BAŞLANGIÇ
+
+let aktifDiv = null;
+function linkMen(link){
+    const linkGrupId = link.dataset.target;
+    const linkGrup = document.getElementById(linkGrupId);
+    console.log(linkGrup)
+    if (aktifDiv !== null && aktifDiv !== linkGrup) {
+        aktifDiv.style.display = "none";
+    }
+    linkGrup.style.display = linkGrup.style.display === "block" ? "none" : "block";
+    aktifDiv = linkGrup.style.display === "block" ? linkGrup : null;
+}
+
+
+// SÖZLEŞME BİTİŞ
+
+
+
+
