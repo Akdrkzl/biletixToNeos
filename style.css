@@ -2716,4 +2716,96 @@ font-family: Arial, Helvetica, sans-serif;
 }
 /* Etkinlik detay css  bitiş*/
 
+/* ! SÖZLEŞME VE  POLİTİKA BAŞLANGIÇ */
+
+.diva{
+    margin-right: 5px;
+    border-radius: 0;
+    color: #fff;
+    background: #009cde;
+    padding: 15px 15px;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bolder;
+}
+
+.diva:hover{
+    border: none;
+    background: #666666 !important;
+}
+
+.sözlesme{
+    font-size: 13px;
+    color: #454545;
+    font-weight: bold;
+}
+
+.sözlesme1{
+    font-size: 13px;
+    color: #454545;
+    font-weight: 500;
+}
+
+.divb{
+    background-color: #f7f7f7;
+}
+
+.sözlesmeimg img{
+    margin-top: 20px;
+}
+
+.pri img {
+    cursor: pointer;
+}
+
+.prin img {
+    cursor: pointer;
+}
+
+
+
+#kullanım{
+    display: none;
+}
+
+#onbil{
+    display: none;
+}
+
+
+@media screen and (max-width : 831px){
+    #rese{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 831px){
+    #reses{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+    .pri{
+        display: none;
+    }
+
+    .prin{
+        display:flex !important;
+        justify-content: end !important;
+        margin-right: 20px !important;
+        margin: 4px;
+    }
+
+    .resesss{
+        margin-top: -27px !important;
+    }
+
+    .res1 {
+        margin-bottom: 3px;
+    }
+}
+
+/* ! SÖZLEŞME VE  POLİTİKA BİTİŞ */
+
 
