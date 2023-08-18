@@ -429,16 +429,16 @@ if(toggleBtnPaylas)
 
 // SÖZLEŞME  BAŞLANGIÇ
 
-let aktifDiv = null;
+let aktifDiva1 = null;
 function linkMen(link){
     const linkGrupId = link.dataset.target;
     const linkGrup = document.getElementById(linkGrupId);
     console.log(linkGrup)
-    if (aktifDiv !== null && aktifDiv !== linkGrup) {
-        aktifDiv.style.display = "none";
+    if (aktifDiva1 !== null && aktifDiva1 !== linkGrup) {
+        aktifDiva1.style.display = "none";
     }
     linkGrup.style.display = linkGrup.style.display === "block" ? "none" : "block";
-    aktifDiv = linkGrup.style.display === "block" ? linkGrup : null;
+    aktifDiva1 = linkGrup.style.display === "block" ? linkGrup : null;
 }
 
 
