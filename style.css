@@ -17,6 +17,7 @@
 :root {
     /* standard white, for container background, some fonts and icons */
     --white: #ffffff;
+    --bluebutton:#026cdf;
   
     /*  some card background hovers */
     --grayish-white: #f7f7f7;
