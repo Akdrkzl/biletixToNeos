@@ -4,8 +4,12 @@ let navbarEye = document.getElementById('navbar-eye')
 let navbarKategori = document.getElementById('navbar-kategori')
 let navbarXmark = document.getElementById('navbar-xmark') 
 
-navbarEye.addEventListener('click', toggleNavbar)
-navbarXmark.addEventListener('click',toggleNavbar)
+if(navbarEye){
+    navbarEye.addEventListener('click', toggleNavbar)
+}
+if(navbarXmark){
+    navbarXmark.addEventListener('click',toggleNavbar)
+}
 
 function toggleNavbar(){
     navbarEye.classList.toggle('navbar-eye')
@@ -317,15 +321,13 @@ function update() {
 }
 
 update();
-}
 contactInfo();
+}
 
 //(footer-bize ulaşın-contactus) contactus.html END
 
 
-// ! ETKİNLİK DETAY  BAŞLANGIÇ
-
-
+// ! ETKİNLİK-DETAY-BAŞLANGIÇ
 // detay link 
 const clickableLink1 = document.getElementById('link1');
 const clickableLink2 = document.getElementById('link2');
@@ -369,49 +371,41 @@ if (clickableLink4)
 });
 }
 
-
-
-
 // bilet ücreti
-
-function updateSelects() {
+function updateSelects(){
     var select1 = document.getElementById("select1");
     var select2 = document.getElementById("select2");
     var select3 = document.getElementById("select3");
     var priceContent1=document.getElementById("ticket-price-content1");
     var priceContent2=document.getElementById("ticket-price-content2");
     var priceContent3=document.getElementById("ticket-price-content3");
-    if (select1.value === "1") {
-        select2.disabled = false;
-        select2.selectedIndex = 1;
-        select3.disabled = false;
-        select3.selectedIndex = 1;
-        priceContent1.style.display="none";
-        priceContent2.classList.add('dflex');
-        priceContent3.classList.remove('dflex');
-        optionFirstic.classList.add('dblock');
-        
-       
-    } 
-    else if (select1.value === "2") {
-        select2.disabled = false;
-        select2.selectedIndex = 1;
-        select3.disabled = false;
-        select3.selectedIndex = 2;
-        priceContent1.style.display="none";
-        priceContent2.classList.remove('dflex');
-        priceContent3.classList.add('dflex');
-
-        if(select3.selectedIndex===2)
-        {
-            console.log("tm")
-            select3.selectedIndex[1].hide();
+    if(select1){
+        if (select1.value === "1") {
+            select2.disabled = false;
+            select2.selectedIndex = 1;
+            select3.disabled = false;
+            select3.selectedIndex = 1;
+            priceContent1.style.display="none";
+            priceContent2.classList.add('dflex');
+            priceContent3.classList.remove('dflex');
+            optionFirstic.classList.add('dblock');
+        } 
+        else if (select1.value === "2") {
+            select2.disabled = false;
+            select2.selectedIndex = 1;
+            select3.disabled = false;
+            select3.selectedIndex = 2;
+            priceContent1.style.display="none";
+            priceContent2.classList.remove('dflex');
+            priceContent3.classList.add('dflex');
+            if(select3.selectedIndex===2)
+            {
+                console.log("tm")
+                select3.selectedIndex[1].hide();
+            }
         }
-    }
-    
+    }  
 }
-
-
 // Sayfa yüklendiğinde veya güncellendiğinde seçimleri kontrol etmek için
 window.onload = updateSelects;
 
@@ -425,7 +419,7 @@ if(toggleBtnPaylas)
 });
 
 }
-// ! ETKİNLİK DETAY  BİTİŞ
+// ! ETKİNLİK-DETAY-BİTİŞ
 
 // SÖZLEŞME  BAŞLANGIÇ
 
