@@ -2806,4 +2806,42 @@ font-family: Arial, Helvetica, sans-serif;
 
 /* ! SÖZLEŞME VE  POLİTİKA BİTİŞ */
 
+/* !TTK-BİLDİRİMLERİ START */
+.ttk-anakapsayıcı{
+    background-color: #f7f7f7;
+}
 
+.ttk-container{
+    background-color: #ffffff;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+
+.ttk-liste-duzenleme{  
+    padding: 0%;
+    font-size: small;
+}
+
+
+#ttk-card{
+    background-color: #f7f7f7;
+    height: 50vh;
+}
+
+@media screen and (max-width:1000px){
+    .ttk-anakapsayıcı{
+        width: 100%;
+    }   
+
+   
+}
+
+
+@media screen and (max-width:768px){
+    .ttk-foto{
+        display: none;
+    }
+  }
+
+/* !TTK-BİLDİRİMLERİ END */
