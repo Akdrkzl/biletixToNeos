@@ -2845,3 +2845,317 @@ font-family: Arial, Helvetica, sans-serif;
   }
 
 /* !TTK-BİLDİRİMLERİ END */
+
+/* KURUCESME SAYFA START */
+
+.body-container{
+  height: 100vh;
+  overflow-x: hidden;
+}
+/* Navbar Start */
+
+.kurucesme-navbar {
+  background: var(--navbar-background-image);
+  width: 100%;
+  padding: 20px 0 20px 10px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgb(2 108 223 / 60%);
+  height: 88px !important;
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+.kurucesme-navbar {
+  height: 104px !important;
+}
+}
+
+.kurucesme-navbar-container {
+  display: flex !important;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kurucesme-header-search {
+  background-color: var(--white);
+  border-radius: 20px;
+} 
+.kurucesme-header-search a {
+  margin: 0 10px 0 15px;
+  color: #bfbfbf;
+  font-size: 14px;
+}
+.kurucesme-header-search input {
+  box-sizing: border-box;
+  width: 335px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #bfbfbf;
+  outline: 0;
+  border-radius: 20px;
+}
+
+.kurucesme-filter-search {
+  border: 1px solid #ebebeb;
+  border-radius: 20px;
+  padding: 8px 5px;
+  color: var(--light-border)
+}
+
+.kurucesme-filter-search input {
+  border: 0;
+  color: var(--light-border);
+  min-width: 220px;
+}
+
+.kurucesme-filter-search a i{
+  font-size: 13px;
+  margin: 0 6px;
+  color: #bfbfbf;
+}
+
+.kurucesme-min-search{
+  position: absolute;
+  top: 110px;
+  width: 93%;
+  border: solid 1px #ccc;
+  left: 0px !important;
+  right: 0px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.kurucesme-min-search a{
+  margin: 0 6px;
+  color: #bfbfbf;
+}
+
+/* Navbar End */
+
+/* Content Start */
+.kurucesme-card{
+  text-align: left;
+border: 1px solid #ebebeb;
+border-radius: 10px;
+padding: 10px;
+box-sizing: border-box;
+
+}
+
+.kurucesme-card-date{
+  position: relative;
+  left: 0;
+  top: -4px;
+  width: 80px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: capitalize;
+  display: inline-block;
+  color: #262626;
+;
+}
+
+.kuruscesme-card-date2{
+  background: 0 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: initial;
+  height: auto;
+ margin: 4px 0;
+}
+
+.kurucesme-card-date-month{
+  height: auto;
+    line-height: initial;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.kurucesme-card-date-day{
+  background: 0 0;
+  color: #000;
+  line-height: initial;
+  height: auto;
+  font-size: 12px;
+}
+
+.kurucesme-card-img{
+    height: 100%;
+    width: 12%;
+    min-height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.kurucesme-card-img img{
+    
+  width: 100%;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+
+
+.kurucesme-card-title{
+  display: inline-block;
+
+}
+
+.kurucesme-card-title h3{
+  font-size: 12px;
+  color: #262626;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+
+}
+.kurucesme-card-button{
+  width: auto;
+  border: 1px solid #026cdf;
+  border-radius: 10px;
+  background: 0 0!important;
+  color: #026cdf!important;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 16px;
+  height: auto;
+  position: relative;
+  padding: 5px 0;
+  margin:  0 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (max-width:455px){
+  .kurucesme-filter-search{
+    display: none !important;
+  }
+  .content-filter-header h2{
+    margin: auto;
+  }
+  .content-filter-header{
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 827px){
+  .kurucesme-card-button{
+margin: 0 !important;
+  }
+}
+@media (min-width: 768px){
+  .kurucesme-min-search{
+    display: none;
+  }
+  .kurucesme-card-button{
+    width: auto;
+    border: 1px solid #026cdf;
+    border-radius: 10px;
+    background: 0 0!important;
+    color: #026cdf!important;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 15px 70px;
+    height: auto;
+    float: right;
+    position: relative;
+    top: 8px;
+    right: 10px;
+    text-decoration: none;
+  }
+  .kurucesme-card-li{
+    margin: 15px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+
+.kurucesme-card{
+  border: none !important;
+}
+
+  .kurucesme-header-search {
+    display: none !important;
+  }
+  .kurucesme-content .kurucesme-content-banner{
+    margin-top: 130px;
+ 
+  }
+
+  .kurucesme-card-img{
+    width: 100% !important;
+  }
+
+  .kurucesme-card-img img{
+    width: 100% !important;
+  }
+  
+}
+
+@media (max-width: 979px) {
+  .kurucesme-header-search input {
+    width: 300px;
+  }
+  .kurucesme-navbar-container {
+    padding: 0 30px 0 30px !important;
+  }
+}
+/* Content End */
+/* Footer Start */
+
+.kurucesme-footer-content{
+  padding-left: 24px !important;
+}
+
+.kurucesme-footer-content .col-md-3 ul{
+  list-style-type: none !important;
+}
+.kurucesme-footer-content .col-md-3 ul li a{
+  color: #999;
+  text-decoration: none !important;
+}
+
+
+.kurucesme-footer-content p{
+font-size: 13px;
+margin-bottom: 50px;
+margin-top: 34px;
+  }
+.kurucesme-scroll-to-top{
+  position: fixed;
+  border: none;
+  width: 60px;
+  height: 60px;
+  background: #e20453;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.kurucesme-scroll-to-top i{
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+}
+
+.kurucesme-scroll-to-top.show {
+  opacity: 1;
+}
+    /* Footer End */
+
+    /* KURUCESME SAYFA END */
