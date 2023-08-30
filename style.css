@@ -3159,3 +3159,392 @@ margin-top: 34px;
     /* Footer End */
 
     /* KURUCESME SAYFA END */
+
+
+/* ALED-BURCU SON HTML CSS BAŞLANGIÇ  */
+/*! SLİDER KISMI BAŞLANGIÇ  */
+.category-scroller-container {
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%;
+  /* Küçük boyutu */
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  white-space: nowrap;
+}
+
+#categoryScroller,
+#categoryScroller-2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+  border-bottom: 1px solid var(--light-gray);
+  width: 100%;
+  /* Scroll çubuğunu gizle */
+}
+
+.category-item {
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+  margin: 0px 80px 0px 80px;
+}
+#prevBtn,
+#nextBtn,
+#prevBtn-2,
+#nextBtn-2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  /* Küçük boyutu */
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  /* Küçük boyutu */
+  transition: background-color 0.3s, color 0.3s;
+  /* Geçiş süresi */
+}
+
+#prevBtn:hover,
+#nextBtn:hover,
+#prevBtn-2:hover,
+#nextBtn-2:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  /* Gölge efekti */
+}
+
+#prevBtn,
+#prevBtn-2 {
+  left: 0px;
+  border: 1px solid var(--light-gray);
+  width: 35px;
+  z-index: 999;
+  /* border-radius: 30px; */
+  /* Küçük boyutu */
+}
+
+#nextBtn,
+#nextBtn-2 {
+  right: 0px;
+  border: 1px solid var(--light-gray);
+  width: 35px;
+  z-index: 999;
+  /* border-radius: 30px; */
+  /* Küçük boyutu */
+}
+
+.category-item a {
+  text-decoration: none !important;
+  font-size: 16px !important;
+  color: #000;
+  font-weight: 600;
+  list-style-type: none;
+  height: 35px;
+  margin-right: 15px;
+  padding: 0px 18px;
+  overflow: visible !important ;
+}
+
+@media (max-width: 664px) {
+  #prevBtn,
+  #nextBtn,
+  #prevBtn-2,
+  #nextBtn-2 {
+    display: block;
+  }
+
+  .category-item a {
+    text-decoration: none !important;
+    font-size: 16px !important;
+    color: #000;
+    font-weight: 600;
+    list-style-type: none;
+    height: 35px;
+    margin-left: 30px;
+    padding: 0px 10px;
+  }
+  #categoryScroller,
+  #categoryScroller-2 {
+    overflow: hidden;
+    /* Scroll çubuğunu gizle */
+  }
+}
+
+/*! SLİDER KISMI SON  */
+
+/*! HESABIM BAŞLANGIÇ */
+
+.accordion-item {
+  border: none !important;
+}
+.avatar {
+  text-align: center;
+  padding: 20px 15px;
+  background: linear-gradient(89.13deg, #002da1 8.34%, #026cdf 104.54%);
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+  color: white;
+  height: 180px;
+}
+
+.accordion-button:focus,
+.accordion-button {
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0.125) !important;
+  background-color: #fff !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: blue !important;
+}
+
+.accordion-button {
+  font-size: 16px;
+  font-weight: 600;
+}
+.avatar img {
+  width: 75px; /* veya istediğiniz boyut */
+  height: 75px; /* veya istediğiniz boyut */
+  border-radius: 50%;
+}
+
+.nameMessage {
+  font-size: 14px;
+  text-align: start;
+  margin-left: 55px;
+}
+
+#accordionExample {
+  width: 250px;
+  background-color: #fff;
+  border-top: none !important;
+}
+.accordion-body {
+  padding: 0 0 !important;
+}
+
+.accordion-body a {
+  display: block;
+  text-decoration: none;
+  color: #262626;
+  font-size: 14px;
+  padding: 8px 48px;
+}
+
+.cikisYap {
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+  padding: 15px 10px !important;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #fff;
+}
+.cikisYap a,
+.cikisYap i {
+  text-decoration: none;
+  background-color: #fff;
+  color: #f44336;
+}
+
+.hesapAyari {
+  margin: 0 0 24px;
+}
+
+/* Biletlerim Kısmı */
+.biletAyari {
+  margin: 0 0 24px;
+}
+
+.biletlerimBody a {
+  text-decoration: none;
+  list-style-type: none;
+}
+.etkinlikBilet {
+  display: none;
+}
+.etkinlikBilet:target {
+  display: block;
+}
+.aled {
+  display: none;
+}
+.aled:target {
+  display: block;
+}
+
+.biletlerimEtkinlikHvr.active {
+  color: blue; /* Aktif linklerin metin rengi */
+}
+
+@media screen and (max-width: 1200px) {
+  .biletAyari {
+    margin-left: 25px;
+  }
+  .biletContent {
+    margin-left: 15px;
+  }
+  .biletlerim-t {
+    margin-left: 10px;
+  }
+}
+/*  */
+.asd {
+  border-bottom: 2px solid blue;
+}
+
+.biletlerimBilgisag {
+  display: none;
+}
+
+/*! BİLETLERİM RESPONSİVE   */
+
+@media screen and (max-width: 768px) {
+  .biletContentIcerik a {
+    display: flex !important;
+
+    flex-wrap: nowrap !important;
+    padding: 0 !important;
+    justify-content: space-evenly !important;
+    width: 100%;
+  }
+}
+
+/*! BİLDİRİM TERCİHLERİ CSS START  */
+.bildirimAdı {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 16px;
+}
+
+.form-check-input {
+  box-shadow: none !important;
+  transition: 0.1s ease all !important;
+  border: 1px solid gray !important;
+  border-radius: 2px 2px !important;
+}
+.modal-header,
+.modal-footer {
+  border: none !important;
+}
+
+/*! BİLDİRİM TERCİHLERİ CSS END  */
+
+/*! ADRESLERİM BAŞLANGIÇ */
+.adresBaslari {
+  padding-top: 20px;
+}
+.btn-bg {
+  border: 1px solid var(--outline-lightblue) !important;
+  padding: 10px !important;
+}
+.btn-bg:hover {
+  background-color: #d7e4f1 !important;
+}
+.adresBasi {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px !important;
+  /* margin-top: 10px; */
+}
+.aciklamas {
+  font-size: 16px;
+  font-weight: 600;
+  color: #026cdf;
+}
+
+.butonSecenekleri {
+  display: inline-block;
+  padding: 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.faturalarIcerik .selected {
+  background-color: #007bff;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.faturaYazdır {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.bireyselFatura,
+.kurumsalFatura {
+  display: none;
+  padding: 10px 0px;
+}
+
+/*! ADRESLERİM SON */
+
+/*! ŞİFRE DEĞİŞİKLİĞİ BAŞLANGIÇ  */
+
+.sifreDegistir {
+  padding-top: 40px !important;
+}
+
+.sifreOzellikleri {
+  display: block;
+  margin-top: 20px;
+}
+.form-floating {
+  font-size: 14px;
+  color: gray;
+}
+.sifreOzellikleri p {
+  font-size: 14px;
+  color: #000000de;
+  display: flex;
+  text-align: center;
+  gap: 5px;
+}
+.guncelle .btn {
+  margin-top: 15px;
+  padding: 7px 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.guncelle .btn:hover {
+  background-color: #0d6efd !important;
+}
+
+.sifreOzellikleri p i {
+  color: gray;
+}
+.valid .sifreOzellikleri p i {
+  color: green;
+}
+.invalid .form-control {
+  border-color: red;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+/*! ŞİFRE DEĞİŞİKLİĞİ SON  */
+
+/*! KİŞİSEL BİLGİLERİM BAŞLANGIÇ  */
+.kisiselBilgilerim input {
+  box-shadow: none !important;
+  transition: 0.1s ease all !important;
+  border: 1px solid gray !important;
+}
+
+/*! KİŞİSEL BİLGİLERİM SON  */
+
+
+/* ALED-BURCU SON HTML CSS SON  */
