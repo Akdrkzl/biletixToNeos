@@ -711,4 +711,54 @@ koltukBilgi()
     //dolusepet.html END
 
 
+// !HEDİYE-KART-START
+function MoreLess(){
+  var dots= document.getElementById("dots");
+  var invisibleText = document.getElementById("invisible-text");
+  var btnText = document.getElementById("btn");
+  if(dots.style.display!="none"){
+      dots.style.display="none";
+      invisibleText.style.display= "inline";
+      btnText.innerHTML= "Gizle";
+  }
+  else{
+      dots.style.display="inline";
+      invisibleText.style.display= "none";
+      btnText.innerHTML= "Devamını Oku";
 
+  }
+}
+function MoreLess1(){
+  var dots= document.getElementById("dots");
+  var invisibleText1 = document.getElementById("invisible-text1");
+  var btn1Text = document.getElementById("btn1");
+  if(dots.style.display!="none"){
+      dots.style.display="none";
+      invisibleText1.style.display= "inline";
+      btn1Text.innerHTML= "Gizle";
+  }
+  else{
+      dots.style.display="inline";
+      invisibleText1.style.display= "none";
+      btn1Text.innerHTML= "Devamını Oku";
+
+  }
+}
+
+function MoreLesss(){
+  var dots= document.getElementById("dots");
+  var invisibleText2 = document.getElementById("invisible-text2");
+  var btnmekanText = document.getElementById("btnmekan");
+  if(dots.style.display!="none"){
+      dots.style.display="none";
+      invisibleText2.style.display= "inline";
+      btnmekanText.innerHTML= "Gizle";
+  }
+  else{
+      dots.style.display="inline";
+      invisibleText2.style.display= "none";
+      btnmekanText.innerHTML= "Daha Fazla Göster";
+
+  }
+}
+// !HEDİYE-KART-END
