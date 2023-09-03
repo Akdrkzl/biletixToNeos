@@ -3937,3 +3937,272 @@ border-radius: 5px;
     }
   }
 /* !HEDİYE KART BİTİŞ */
+/*! ticketmaster-biz-kimiz-start */
+.ticket-master-en-dis {
+    background-color: #0150a7;
+    position: sticky;
+    top: 0;
+    z-index: 10000887;
+   
+}
+#logo-down{
+    display: none;
+    width: 15px !important;
+}
+
+.hero-img {
+    position: relative;
+    height: 80vh;
+    background: url(./img/hero-img.webp);
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+
+
+
+}
+
+.hero-text {
+
+    top: 150px;
+    left: -50px;
+
+
+}
+
+.hero-text ul li {
+    list-style-type: none !important;
+    font-weight: 500;
+    font-size: 20px;
+    
+
+}
+
+.hero-text h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.biz-kimiz-slide1 {
+    border-bottom: 2px solid lightgray !important;
+    position: sticky !important;
+    top: 0 !important;
+    background-color: white!important;
+}
+.biz-kimiz-slide2 {
+
+    width: 70% !important;
+ 
+
+}
+
+.biz-kimiz-slide2 a {
+    color: black;
+    font-weight: 700;
+    font-size: 17px;
+   
+}
+
+.text1 {
+    padding-top: 100px;
+}
+
+.text1 h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.text1 p {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+
+.biz-kimiz-main {
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 25px;
+    background-image: url(https://business.ticketmaster.com.tr/wp-content/uploads/2022/05/top-right.png) !important;
+  
+    height: 100vh !important;
+    width: 100% !important;
+    
+
+}
+
+.biz-kimiz-buttons {
+    border-color: #0150a7;
+    color: #026CDF !important;
+    border-width: 2px !important;
+    border-color: #026cdf;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600 !important;
+    background-color: #FFFFFF;
+}
+
+.text2 {
+    padding-top: 10px !important;
+}
+
+.text2 h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.text2 p {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.biz-kimiz-en-main {
+    height: 120vh !important;
+    background-image: url(./img/bottom-left-new.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+
+
+}
+
+
+
+.biz-kimiz-main2 p {
+    padding-right: 100px;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: left;
+    padding-top: 50px !important;
+
+
+}
+
+.biz-kimiz-main2 img {
+    padding-top: 50px !important;
+}
+
+.biz-kimiz-main3 {
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 25px;
+    height: 100vh !important;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    /* width: 100rem !important; */
+}
+
+.text3 {
+    padding-top: 70px !important;
+}
+
+.text3 h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.text3 p {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.biz-kimiz-en-main2 {
+    height: 87vh !important;
+    background-image: url(./img/bottom-left-new.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.biz-kimiz-en-main2 p {
+    padding-top: 50px !important;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.text4 {
+    padding-top: 200px !important;
+}
+
+.text4 h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.text4 p {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.handshake-kapsayici
+{
+    background-color: #EAF3FF;
+}
+
+.handshake2-text{
+    top: 180px !important;
+    width: 500px !important;
+    left: 60px !important;
+    
+}
+.handshake2-text p{
+    font-weight: 600 !important;
+    font-size: 25px !important;
+}
+.biz-kimiz-en-main4 p {
+    padding-top: 50px !important;
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.biz-kimiz-en-main4{
+    
+    margin-bottom: 50px !important;
+}
+.bizimle-calisin{
+    width: 200px !important;
+    margin-top: 30px !important;
+    
+}
+#main1-footer {
+    background-color: #000000;
+    display: block !important;
+    float: left;
+    width: 100%;
+    padding-bottom: 30px;
+    color: #ffffff;
+    
+}
+#footer1-logo, #et-footer1-nav, #footer1-bottom {
+    padding: 30px 0 30px;
+}
+#footer1-logo {
+    width: 30%;
+}
+#footer1-logo {
+    border-top: 1px solid #bfbfbf;
+}
+
+#main1-footer button {
+    font-family: "Averta", Arial, sans-serif;
+    font-size: 14px;
+    padding-top: 30px;
+    color: #ffffff;
+    text-decoration: none !important;
+    cursor: pointer;
+    border: none!important;
+    background: none;
+    outline: none!important;
+}
+#main1-footer button:hover{
+    text-decoration: underline !important;
+}
+.ticketmaster-footer{
+    padding-top: 41px;
+    padding-left: 10px !important;
+}
+/*! ticketmaster-biz-kimiz-end */
