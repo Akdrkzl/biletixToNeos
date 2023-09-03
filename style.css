@@ -3836,3 +3836,104 @@ border-radius: 5px;
     }
   }
   /* !BOOT-YARDIM-SON */
+
+/* ! Hediye Kart Alanı */
+.hediyekart-container{
+    width: 75% !important;
+}
+.container-hediyekart p{
+    font-size: 14px;
+    color: #1F262D;
+}
+.container-hediyekart{
+    background-color: #f7f7f7;
+}
+
+.hediyekart2-card{
+    display: none !important;
+}
+
+.hediyekar-navbar{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);;
+}
+.hediyekart-sorgula{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);;
+}
+.hediyekart-card a{
+    position: relative;
+}
+.hediyekart-card a:hover::after{
+    content: ""; 
+    display: block;
+    position: absolute;
+    bottom: -1px; 
+    width: 25%;
+    border-bottom: 2px solid;
+}
+.hediyekar-navbar .btn {
+    margin-left: auto;
+}
+.hediyekar-navbar{
+    display: flex;
+}
+#invisible-text{
+    display: none;
+}
+#invisible-text1{
+    display: none;
+}
+/* Başlıkların altındaki çizgi */
+.hediyekart-section{
+    position: relative;
+}
+.hediyekart-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 65px;
+    height: 3px; 
+    background-color: #1F262D;
+}
+/* Navbar başlıkların altında çizgi */
+.navbarWrapper  a {
+    text-decoration: none; 
+    position: relative; 
+    color: #8F9296;
+  }
+.navbarWrapper  a:hover::after {
+    content: ""; 
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -9px; 
+    width: 90%;
+    border-bottom: 5px solid;
+    color: black;
+  }
+/* Hediye Kart Sayfası Responsive */
+  @media screen and (max-width:770px) {
+    .hediyekart-container{
+        width: 100% !important;
+    }
+    .hediyekart-foto1{
+        display: none ;
+    }
+    .hediyekart2-card{
+        display: block !important;
+    }  
+    .hediyekart-button{
+        display: block !important;
+        width: 100%;
+    }
+    .hediyekar-navbar{
+        display: block !important;
+    }
+}
+  @media screen and (max-width:1025px) {
+    .hediyekart-container{
+        width: 100% !important;
+        padding: 0;
+    }
+  }
+/* !HEDİYE KART BİTİŞ */
